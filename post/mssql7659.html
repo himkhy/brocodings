@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<!-- Mirrored from www.brocodings.com/post/mssql?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a1%20%e1%9f%96Parameter%20%e1%9e%93%e1%9f%85%e1%9e%80%e1%9f%92%e1%9e%93%e1%9e%bb%e1%9e%84%20Stored%20Procedure by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Aug 2020 08:18:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="Keywords"
+        content="HTML,CSS,JavaScript,MYSQL,MSSQL,PHP,jQuery,JSON,DOM,Bootstrap,C,C++,C#,Analysis System,Java,Web development,tutorials,programming,training,learning,lessons,examples,exercises,source code,colors,demos" />
+    <meta name="description" content="brocodings.com | មេរៀនទី១១ ៖Parameter នៅក្នុង Stored Procedure" />
+    <title>brocodings.com | មេរៀនទី១១ ៖Parameter នៅក្នុង Stored Procedure</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="../assets/css/bro-style.css" />
+    <link rel="stylesheet" href="../assets/css/customiz.html" />
+    <link rel="stylesheet" href="../assets/css/jquery.colorbox-min.html" />
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.html" />
+    <link rel="stylesheet" href="../assets/css/slick.min.html" />
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+       
+            <div class="container-fluid">
+                <nav class="navbar  fixed-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">BROCODINGS.COM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+           
+        </ul>
+        <ul class="navbar-nav">
+             <li class="nav-item"><a class="nav-link" href="../searchfilter.html"><i class="fa fa-search"
+                                            aria-hidden="true"></i></a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Video
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="../products/2.html">វីដេអូ CMS</a>
+                                                                                    </div>
+                                    </li>
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Libraries
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="json.html">json</a>
+                                                                                        <a class="dropdown-item"
+                                                href="flutter.html">flutter</a>
+                                                                                        <a class="dropdown-item"
+                                                href="Laravel.html">Laravel</a>
+                                                                                        <a class="dropdown-item"
+                                                href="computer.html">កុំព្យូទ័រ</a>
+                                                                                        <a class="dropdown-item"
+                                                href="wordPress.html">WordPress</a>
+                                                                                        <a class="dropdown-item"
+                                                href="mssql.html">MsSQL</a>
+                                                                                        <a class="dropdown-item"
+                                                href="css.html">css</a>
+                                                                                        <a class="dropdown-item"
+                                                href="html.html">html</a>
+                                                                                        <a class="dropdown-item"
+                                                href="dart.html">dart</a>
+                                                                                        <a class="dropdown-item"
+                                                href="crudbooster.html">crudbooster</a>
+                                                                                        <a class="dropdown-item"
+                                                href="kwdesign.html">colors design</a>
+                                                                                        <a class="dropdown-item"
+                                                href="c.html">c</a>
+                                                                                        <a class="dropdown-item"
+                                                href="mysql.html">mysql</a>
+                                                                                        <a class="dropdown-item"
+                                                href="powerpoint.html">powerpoint</a>
+                                                                                        <a class="dropdown-item"
+                                                href="photoshop.html">Photoshop</a>
+                                                                                        <a class="dropdown-item"
+                                                href="illustrator.html">Illustrator</a>
+                                                                                    </div>
+
+
+                                    </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Press Release
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="../press/4.html">project</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/3.html">book</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/2.html">Software</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/1.html">Template Web Design</a>
+                                                                                    </div>
+                                    </li>
+                                       
+                                    <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
+                                    <li class="nav-item"><a  class="nav-link" href="../contact.html">Contact Us</a></li>
+  
+        </ul>
+    </div>
+</nav>
+
+                      
+        </div><!-- container-fluid navibar-->
+    </div> <!-- // wrapper -->    
+                
+
+<div class="main-contianer">
+    <div class="container-lesson">
+        <div class="main-left position-fixed " id="sticky-sidebar">
+            <div class="list-title">
+                <div id="mylistLinks">
+
+                    <ul>
+                                                <li>
+                            <a href="mssqlea4a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%20%e1%9f%96%20Variable%20Declaration">មេរៀនទី១ ៖ Variable Declaratio...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlf1b7.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%20%e1%9f%96Operator%20%e1%9e%93%e1%9f%85%e1%9e%80%e1%9f%92%e1%9e%93%e1%9e%bb%e1%9e%84%20SQL%20Server">មេរៀនទី២ ៖Operator នៅក្នុង SQL...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql2684.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%20%e1%9f%96Control%20Structure">មេរៀនទី៣ ៖Control Structure
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlde09.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a4%20%e1%9f%96%e2%80%8b%20Try%20%e2%80%a6%20Catch">មេរៀនទី៤ ៖​ Try … Catch
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql0021.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a5%20%e1%9f%96%20Wait%20For">មេរៀនទី៥ ៖ Wait For
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlfd9c.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a6%20%e1%9f%96%20Sequence">មេរៀនទី៦ ៖ Sequence
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql8758.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a7%20%e1%9f%96%20OFFSET%20%e1%9e%93%e1%9e%b7%e1%9e%84%20FETCH">មេរៀនទី៧ ៖ OFFSET និង FETCH
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlb045.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a8%20%e1%9f%96%20ROW_NUMBER()">មេរៀនទី៨ ៖ ROW_NUMBER()
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqldcb4.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a9%20%e1%9f%96%20Stored%20Procedure">មេរៀនទី៩ ៖ Stored Procedure
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql7e43.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a0%20%e1%9f%96%20%e1%9e%94%e1%9e%84%e1%9f%92%e1%9e%80%e1%9e%be%e1%9e%8f%20Stored%20Procedure">មេរៀនទី១០ ៖ បង្កើត Stored Proc...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql7659.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a1%20%e1%9f%96Parameter%20%e1%9e%93%e1%9f%85%e1%9e%80%e1%9f%92%e1%9e%93%e1%9e%bb%e1%9e%84%20Stored%20Procedure">មេរៀនទី១១ ៖Parameter នៅក្នុង S...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql321d.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a2%20%e1%9f%96User%20Define%20Function">មេរៀនទី១២ ៖User Define Functio...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqld734.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a3%20%e1%9f%96%20Built-in%20Function%20in%20SQL%20Server">មេរៀនទី១៣ ៖ Built-in Function...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql67bb.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a4%20%e1%9f%96%20Limitations%20and%20Restrictions">មេរៀនទី១៤ ៖ Limitations and Re...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql45f5.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a5%20%e1%9f%96%20SP%20vs%20UDF">មេរៀនទី១៥ ៖ SP vs UDF
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql246c.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a6%20%e1%9f%96%20Creating%20and%20Using%20View">មេរៀនទី១៦ ៖ Creating and Using...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql204a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a7%20%e1%9f%96%20Create%20Partition%20Table">មេរៀនទី១៧ ៖ Create Partition T...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlae7c.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a8%20%e1%9f%96What%20is%20Full%20Text?">មេរៀនទី១៨ ៖What is Full Text?
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlf298.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a9%20%e1%9f%96%20Overview%20of%20the%20Full-Text%20Predicates">មេរៀនទី១៩ ៖ Overview of the Fu...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlca1f.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a0%20%e1%9f%96%20Creating%20Full%20Text%20in%20SQL%20Server">មេរៀនទី២០ ៖ Creating Full Text...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqleb0a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a1%20%e1%9f%96%20Overview%20of%20the%20Full-Text%20Predicates">មេរៀនទី២១ ៖ Overview of the Fu...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql99ac.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a2%20%e1%9f%96%20Using%20Full%20Text%20in%20SQL%20Server">មេរៀនទី២២ ៖ Using Full Text in...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql4b53.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a3%20%e1%9f%96%20Using%20Thesaurus%20Files%20for%20Full%20Text%20in%20SQL%20Server">មេរៀនទី២៣ ៖ Using Thesaurus Fi...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql0dfa.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a4%20%e1%9f%96%20Introduction%20to%20Transaction">មេរៀនទី២៤ ៖ Introduction to Tr...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqldba5.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a5%20%e1%9f%96%20Auto%20Commit%20Transaction">មេរៀនទី២៥ ៖ Auto Commit Transa...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql8b9c.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a6%20%e1%9f%96%20Type%20of%20Transactions">មេរៀនទី២៦ ៖ Type of Transactio...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql0000.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a7%20%e1%9f%96%20Nested%20and%20Saving%20Transaction">មេរៀនទី២៧ ៖ Nested and Saving...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql0e05.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a9%20%e1%9f%96%20Introduction%20to%20Trigger">មេរៀនទី២៩ ៖ Introduction to Tr...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlde18.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a0%20%e1%9f%96%20(Data%20Manipulation%20Languages)DML%20Trigger">មេរៀនទី៣០ ៖ (Data Manipulation...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqld758.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a1%20%e1%9f%96%20What%20is%20Backup%20database?">មេរៀនទី៣១ ៖ What is Backup dat...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql3e5b.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a2%20%e1%9f%96%20%e1%9e%80%e1%9e%b6%e1%9e%9a%20Copy%20File%20Database">មេរៀនទី៣២ ៖ ការ Copy File Data...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql3b5a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a2%20%e1%9f%96%20%e1%9e%80%e1%9e%b6%e1%9e%9a%20Generate%20Script%20(.sql)">មេរៀនទី៣២ ៖ ការ Generate Scrip...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqleec9.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a3%20%e1%9f%96%20%e1%9e%80%e1%9e%b6%e1%9e%9a%20Backup%20%e1%9e%87%e1%9e%b6%20File%20(.bak)">មេរៀនទី៣៣ ៖ ការ Backup ជា File...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql797a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a4%20%e1%9f%96%20%e1%9e%80%e1%9e%b6%e1%9e%9a%20Restore%20Database%20%e1%9e%87%e1%9e%b6%20File%20(.bak)">មេរៀនទី៣៤ ៖ ការ Restore Databa...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql136f.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a5%20%e1%9f%96%20%e1%9e%80%e1%9e%b6%e1%9e%9a%e1%9e%94%e1%9e%84%e1%9f%92%e1%9e%80%e1%9e%be%e1%9e%8f%20Job%20%e1%9e%93%e1%9f%85%e1%9e%80%e1%9f%92%e1%9e%93%e1%9e%bb%e1%9e%84%20SQL%20Server">មេរៀនទី៣៥ ៖ ការបង្កើត Job នៅក្...
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="mysFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+        <!--main-left-->
+        <div class="mainlist">
+
+            
+            
+                        <h3> មេរៀនទី១១ ៖Parameter នៅក្នុង Stored Procedure</h3>
+            <p> <div style="language:en-US;line-height:200%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.25in;text-indent:-.25in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size:12.0pt"><span style="mso-special-format:bullet;font-family:Arial">•</span></span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">នៅក្នុងការបង្កើត
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Stored
+Procedure </span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ជាទូទៅយើងការប្រើ
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Paremeter</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ដើម្បីធ្វើការទៅតាមការងារដែលយើងបង្កើត
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Procedure
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">នោះ
+តែនៅក្នុង </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Pararmeter</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">យើងក៏មានច្រើនប្រភេទសម្រាប់ធ្វើការទទួលតម្លៃដូចនេះយើងត្រូវកំណត់
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Parameter
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ឱ្យបានច្បាស់នៅពេលបង្កើតនោះ។</span></div>
+
+<div style="language:en-US;line-height:200%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.25in;text-indent:-.25in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size:12.0pt"><span style="mso-special-format:bullet;font-family:Arial">•</span></span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ខាងក្រោមនេះជា
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Parameter
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ធម្មតានៅក្នុង
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Procedure
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">តែប្រសិនបើយើងចង់កំណត់
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Default
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ទៅឱ្យ
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Parameter&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ឬ
+តម្លៃទទេ</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">រ</span></div>
+
+<p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">CREATE
+PROCEDURE </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">GetTaskEvents</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">@</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">TaskName</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">varchar</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(50),
+@ID </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">int</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+= NULL</span></p>
+
+<p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">AS</span></p>
+
+<p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">BEGIN</span></p>
+
+<p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">--
+SP Logic</span></p>
+
+<p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">END;</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"><br></span></p><div style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.25in;text-indent:-.25in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size:12.0pt"><span style="mso-special-format:bullet;font-family:Arial">•</span></span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">នៅ</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ក្នុង</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+Stored Procedure </span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">មាន </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Parameter
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ចំនួន
+៣ ប្រភេទ គឺ ៖ </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Input,
+Output </span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">និង </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Optional
+</span></div><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">CREATE
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">PROCEDURE
+[Sales].[</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">udpGetSalesByTerritory</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">]
+</span></p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">TerritoryID</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">int</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">,
+</span></p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SumTotalSubTotal</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+money = 10000 OUTPUT, </span></p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SumTotalDue</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+money OUTPUT </span></p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">AS </span></p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SELECT</span></p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SumTotalSubTotal</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+= SUM(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SubTotal</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">),
+</span></p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SumTotalDue</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+= SUM(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">TotalDue</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">)
+</span></p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">FROM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Sales.SalesOrderHeader</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span></p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">WHERE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">TerritoryID</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+= @</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">TerritoryID</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">)
+AND </span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SubTotal</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+&gt; @</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SumTotalSubTotal</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">)</span></p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"><br></span></p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"><br></span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">បង្កើត
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Stored
+Procedure </span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">នៅក្នុង
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SQL
+Server</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">Create</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">Proc</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">[</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">SP_Subject</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">]</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">@</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">FacID</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">int</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">,</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">@Years</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">int</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">,</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">@Semester</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">nvarchar</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">50</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">),</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">@</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">AcademicYear</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">nvarchar</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">50</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">)</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">as</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">If</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">@Semester</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">=</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:red;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+red;mso-style-textfill-fill-alpha:100.0%">'second session'</span></p><p style="line-height: 200%; margin-top: 5pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">Select</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">SubID</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">,</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">SubName</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">from</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">tblSubjects</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">Where</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">FacID</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">=</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">@</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">FacID</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">and</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">Years</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">=</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">@Years</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">and</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">AcademicYear</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">=</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">@</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">AcademicYear</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">Else</span></p><p style="language:en-US;line-height:220%;margin-top:0pt;margin-bottom:0pt;
+margin-left:.5in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging">
+
+
+
+
+
+
+
+
+
+
+
+</p><p style="line-height: 200%; margin-top: 5pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">Select</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">SubID</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">,</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">SubName</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">from</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">tblSubjects</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">Where</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">FacID</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">=</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">@</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">FacID</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">and</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">Years</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">=</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">@Years</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">and</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">Semester</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">in(</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">@Semester</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">)</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">and</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">AcademicYear</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:gray;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+gray;mso-style-textfill-fill-alpha:100.0%">=</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">@</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%">AcademicYear</span></p><p style="line-height: 200%; margin-top: 5pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%"><br></span></p><p style="line-height: 200%; margin-top: 5pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:teal;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+teal;mso-style-textfill-fill-alpha:100.0%"><br></span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ហៅ
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Stored
+Procedure </span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ប្រើជាមួយនឹង</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+Class </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SQLCommand</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">នៅក្នុង&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">VB.NET</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">Dim</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmd</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">As</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">New</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#2B91AF;mso-style-textfill-fill-alpha:100.0%">SqlCommand</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">“</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">SP_Subject</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">"</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">, </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">con)</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">con.Open</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">()</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmd.CommandType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">= </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#2B91AF;mso-style-textfill-fill-alpha:100.0%">CommandType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">.StoredProcedure</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmd.Parameters.Add</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">"@</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">FacID</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">"</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">, </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#2B91AF;mso-style-textfill-fill-alpha:100.0%">SqlDbType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">.Int</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">).Value </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">= </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmbFaculty.SelectedValue</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmd.Parameters.Add</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">"@Years"</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">, </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#2B91AF;mso-style-textfill-fill-alpha:100.0%">SqlDbType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">.Int</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">).Value </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">=</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmbYear.SelectedValue</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -0.6pt;">&nbsp;&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -0.6pt;">cmd.Parameters.Add</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -0.6pt;">(</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;letter-spacing:-.6pt;
+mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:solid;
+mso-style-textfill-fill-color:#A31515;mso-style-textfill-fill-alpha:100.0%">"@Semester"</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -0.6pt;">, </span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;letter-spacing:-.6pt;
+mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:solid;
+mso-style-textfill-fill-color:#2B91AF;mso-style-textfill-fill-alpha:100.0%">SqlDbType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -0.6pt;">.Int</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -0.6pt;">).Value
+= </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -0.6pt;">cmbSemester.SelectedValue</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -1.6pt;">cmd.Parameters.Add</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -1.6pt;">(</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast;
+color:#A31515;letter-spacing:-1.6pt;mso-font-kerning:12.0pt;language:en-US;
+mso-style-textfill-type:solid;mso-style-textfill-fill-color:#A31515;mso-style-textfill-fill-alpha:
+100.0%">"@</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast;
+color:#A31515;letter-spacing:-1.6pt;mso-font-kerning:12.0pt;language:en-US;
+mso-style-textfill-type:solid;mso-style-textfill-fill-color:#A31515;mso-style-textfill-fill-alpha:
+100.0%">AcademicYear</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast;
+color:#A31515;letter-spacing:-1.6pt;mso-font-kerning:12.0pt;language:en-US;
+mso-style-textfill-type:solid;mso-style-textfill-fill-color:#A31515;mso-style-textfill-fill-alpha:
+100.0%">"</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -1.6pt;">, </span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast;
+color:#2B91AF;letter-spacing:-1.6pt;mso-font-kerning:12.0pt;language:en-US;
+mso-style-textfill-type:solid;mso-style-textfill-fill-color:#2B91AF;mso-style-textfill-fill-alpha:
+100.0%">SqlDbType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -1.6pt;">.NVarChar</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -1.6pt;">, 50).Value = </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; letter-spacing: -1.6pt;">cmbAcademicYear.SelectedValue</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast;
+color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:solid;
+mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">Dim</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">dtSubject</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">As</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">New</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#2B91AF;mso-style-textfill-fill-alpha:100.0%">DataTable</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">dtSubject.Load</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmd.ExecuteReader</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">())</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">con.Close</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">()</span></p><p style="line-height: 200%; margin-top: 5pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">gvSubject.DataSource</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">= </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">dtSubject</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"><br></span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"><br></span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ហៅ
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Stored
+Procedure </span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ប្រើជាមួយនឹង</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+Class </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SQLDataAdapter</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">នៅក្នុង&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">VB.NET</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">Dim</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">da </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">As</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">New</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#2B91AF;mso-style-textfill-fill-alpha:100.0%">SqlDataAdapter</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">“</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">SP_Subject</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">"</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">, </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">con)</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">da.SelectCommand.CommandType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">=</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#2B91AF;mso-style-textfill-fill-alpha:100.0%">CommandType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">.StoredProcedure</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">da.SelectCommand.Parameters.Add</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">"@</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">FacID</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">"</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">, </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#2B91AF;mso-style-textfill-fill-alpha:100.0%">SqlDbType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">.Int</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">).Value </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">= &nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmbFaculty.SelectedValue</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">da.SelectCommand.Parameters.Add</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">"@</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">Years"</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">, </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#2B91AF;mso-style-textfill-fill-alpha:100.0%">SqlDbType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">.Int</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">).Value </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">= &nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmbYear.SelectedValue</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">da.SelectCommand.Parameters.Add</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">"@</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">Semester"</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">, </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#2B91AF;mso-style-textfill-fill-alpha:100.0%">SqlDbType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">.Int</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">).Value = </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmbSemester.SelectedValue</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">da.SelectCommand.Parameters.Add</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">"@</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">AcademicYear</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#A31515;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#A31515;mso-style-textfill-fill-alpha:100.0%">"</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">, </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#2B91AF;mso-style-textfill-fill-alpha:100.0%">SqlDbType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">.NVarChar</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">, 50).Value = </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmbAcademicYear.SelectedValue</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+&nbsp; </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">Dim</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">dtSubject</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">As</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:blue;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+blue;mso-style-textfill-fill-alpha:100.0%">New</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:#2B91AF;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+#2B91AF;mso-style-textfill-fill-alpha:100.0%">DataTable</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Da.Fill</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">dtSubject</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">)</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;
+&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">gvSubject.DataSource</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">= </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">dtSubject</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"><br></span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ខាងក្រោមនេះជាការបង្កើត
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">OUTPUT
+Parameter </span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">នៅក្នុង
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Procedure</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">ALTER
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Proc</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+[</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">dbo</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">].[</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">sp_output</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">]
+@Name </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">nvarchar</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(50),@ID
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">nvarchar</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(50)
+OUTPUT</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">as</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp; SELECT @ID = names </span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp; FROM </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">tblinfo</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+Where Names=@Name</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">តើយើងត្រូវប្រើយ៉ាងមិចនៅក្នុងការសរសេរ
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Code
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">នៅក្នុង
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">VB.NET
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ឬ
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">C#</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">?</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+
+
+
+
+
+
+
+
+
+
+
+</p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">គឺយើងត្រូវកំណត់
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Property
+Direction </span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ទៅឱ្យ
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Parameter
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">នោះស្មើនឹង
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">ParameterDirection.Output</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"><br></span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 20pt; font-family: &quot;Khmer OS Content&quot;;">&nbsp;</span><span style="font-size: 20pt; font-family: &quot;Khmer OS Content&quot;;">&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Dim
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmd</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+As New </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SqlCommand</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">("</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">sp_output</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">",
+con)</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmd.CommandType</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+= </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">CommandType.StoredProcedure</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmd.Parameters.Add</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">("@Name",
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SqlDbType.NVarChar</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">,
+50).Value = "</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">sok</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">"</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmd.Parameters.Add</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">("@ID",
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SqlDbType.NVarChar</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">,
+50)</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmd.Parameters</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">("@ID").Direction
+= </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">ParameterDirection.Output</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">con.Open</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">()</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmd.ExecuteReader</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">()</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">con.Close</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">()</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">MessageBox.Show</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">cmd.Parameters</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">("@ID").Value)</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"><br></span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Khmer Chantha&quot;;">ចូលបង្កើត
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Procedure
+</span><span style="font-size: 12pt; font-family: &quot;Khmer Chantha&quot;;">ដែលធ្វើការ
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Insert
+Delete </span><span style="font-size: 12pt; font-family: &quot;Khmer Chantha&quot;;">និង
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Update</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+ទៅកាន់ </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Table student.</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Khmer Chantha&quot;; font-weight: bold;">ឧទាហរណ៍
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Freehand&quot;; font-weight: bold;">៖</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Insert
+</span><span style="font-size: 12pt; font-family: &quot;Khmer Chantha&quot;;">ទិន្នន័យចូលទៅកាន់
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Table
+info</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.25in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">Create</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">Proc</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">SP_InsertData</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.25in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">&nbsp; </span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:solid;
+mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">&nbsp; @</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:solid;
+mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">Name</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">nvarchar</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">50</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">),</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@Phone</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">nvarchar</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">50</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">),</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@email</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">nvarchar</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">255</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">)</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.25in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">As</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.25in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">&nbsp; Insert</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">into</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">tblinfo</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">(</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">Names</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">,</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">Phone</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">,</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">Email</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">)</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">Values</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">(</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">Name</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">,</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@Phone</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">,</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@Email</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">)</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Delete
+</span><span style="font-size: 12pt; font-family: &quot;Khmer Chantha&quot;;">ទិន្នន័យចេញពី
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Table
+info</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp; </span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:solid;
+mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">Create</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">Proc</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">SP_DeleteData</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@ID</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">int</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.25in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">As</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.25in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">&nbsp; Delete</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">From</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">tblinfo</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">Where</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">ID</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">=</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@ID</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">;</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.25in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%"><br></span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Update
+</span><span style="font-size: 12pt; font-family: &quot;Khmer Chantha&quot;;">ទិន្នន័យចេញពី
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Table
+info</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.25in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">Create</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">Proc</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">SP_UpdateData</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@ID</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">int</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">,</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@name</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">nvarchar</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">50</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">),</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@phone</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">nvarchar</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">50</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">),</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@email</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">nvarchar</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">255</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">)</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.25in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">As</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.25in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:fuchsia;mso-font-kerning:12.0pt;language:en-US;
+mso-style-textfill-type:solid;mso-style-textfill-fill-color:fuchsia;mso-style-textfill-fill-alpha:
+100.0%">Update</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:solid;
+mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">tblinfo</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">SET</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">Names</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">=</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">name</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">,</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">Phone</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">=</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">phone</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">,</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">Email</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">=</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@Email</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.25in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:blue;mso-style-textfill-fill-alpha:100.0%">Where</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">ID</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:gray;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:gray;mso-style-textfill-fill-alpha:100.0%">=</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:teal;mso-style-textfill-fill-alpha:100.0%">@ID</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><u><span style="font-size: 12pt; font-family: &quot;Khmer Chantha&quot;;">លំហាត់</span></u></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.25in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; ចូរធ្វើការបង្កើត </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Stored
+Procedure </span><span style="font-size: 12pt; font-family: DaunPenh;">មួយដែលធ្វើការ </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Insert
+</span><span style="font-size: 12pt; font-family: DaunPenh;">ទិន្នន័យចូលក្នុង </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Table</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Order
+</span><span style="font-size: 12pt; font-family: DaunPenh;">និង </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Update
+</span><span style="font-size: 12pt; font-family: DaunPenh;">ទិន្នន័យនៅក្នុង </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Table
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Stock_Out</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: DaunPenh;">។</span></p><p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: DaunPenh;">&nbsp;</span><span style="text-indent: -0.5in; font-size: 12pt;"><span style="mso-special-format:&quot;numbullet3\,1&quot;;
+font-family:Arial">1.</span></span><span style="text-indent: -0.5in; font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ចូរធ្វើការបង្កើត </span><span style="text-indent: -0.5in; font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Sequence
+</span><span style="text-indent: -0.5in; font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">នៅក្នុង
+</span><span style="text-indent: -0.5in; font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SQL
+Server&nbsp; </span><span style="text-indent: -0.5in; font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ដែលមានទម្រង់ដូចខាងក្រោម៖</span></p>
+
+<div class="O1" style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.88in; text-indent: -0.38in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt"><span style="mso-special-format:&quot;numbullet0\,1&quot;;
+font-family:Arial">a.</span></span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Pro001, Cus001, Stu001</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+ដែលបី </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Character </span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ខាងមុខជាអក្សរហើយបីលេខខាងក្រោយ
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Auto
+Number</span></div>
+
+<div class="O1" style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.88in; text-indent: -0.38in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size:12.0pt"><span style="mso-special-format:&quot;numbullet0\,1&quot;;
+font-family:Arial">b.</span></span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">14</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:red;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:solid;
+mso-style-textfill-fill-color:red;mso-style-textfill-fill-alpha:100.0%">070</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">001,</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">14</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:red;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:red;mso-style-textfill-fill-alpha:100.0%">070</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">002,
+14</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:red;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+red;mso-style-textfill-fill-alpha:100.0%">070</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">003,
+14</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:red;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+red;mso-style-textfill-fill-alpha:100.0%">071</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">001,</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">14</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:red;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:red;mso-style-textfill-fill-alpha:100.0%">071</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">002,
+14</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:red;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+red;mso-style-textfill-fill-alpha:100.0%">071</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">003,</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">14</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:red;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:
+solid;mso-style-textfill-fill-color:red;mso-style-textfill-fill-alpha:100.0%">072</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">001
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ធ្វើការបង្កើត
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Sequence
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ដែលកើតឡើងតាមថ្ងៃ
+និងឆ្នាំ </span></div>
+
+<p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Function
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ដែលត្រូវប្រើ&nbsp;  </span></p>
+
+<p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">- </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">GetDate</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">()
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">សម្រាប់ទាញយកថ្ងៃ
+ខែ បច្ចុប្បន្ន</span></p>
+
+<p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">- </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Year(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">GetDate</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">())
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">សម្រាប់ទាញយកឆ្នាំបច្ចុប្បន្ន</span></p>
+
+<p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">- </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Left(</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Expression,Count</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">)
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">សម្រាប់ចាប់យកផ្នែកណាមួយនៃ
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Expression
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ទៅតាមចំនួន
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Character
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">នៅខាងឆ្វេង
+។</span></p>
+
+<p style="line-height: 200%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">2.
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ចូរបង្កើត
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Procedure
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ដែលអាចធ្វើការ
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Insert,
+Update</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> ទៅលើ </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Table
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ណាមួយ
+ដោយប្រើ </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SQLCommand</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> </span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">និង
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">SQLDataAdapter</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ព្រមទាំង
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">OutPut</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+Parameter </span><span style="font-size: 12pt; font-family: &quot;Khmer OS Content&quot;;">ផងដែរ ។</span></p>
+
+<p style="line-height: 150%; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0.5in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"></p></p>
+            
+
+            
+
+
+        </div>
+        <!--mainlist-->
+
+
+    </div>
+    <!--container-->
+
+
+
+</div>
+<!--main-contianer-->
+<style type="text/css">
+    .mainfooter {
+    display: none !important;
+}
+</style>
+
+          
+
+     <div class="mainfooter">
+       <div class="wrapper">
+           <div class="footer">
+               <div class="footer-top">
+                   <a href="#" class="scrollup" style="display: none;">Go Top</a>
+                   <div class="container">
+                       <div class="footer-main-menu quick-link">
+                           <div class="sub-title">
+                               <h4>Quick Link</h4>
+                           </div>
+                           <div class="menu-quick-link-menu-container">
+                               <div class="menu-quick-link-container">
+                                   <ul id="menu-quick-link" class="menu">
+                                       <li>
+                                           <a href="../about.html">About Us</a></li>
+                                       <li>
+                                           <a href="../contact.html">Contact Us</a>
+                                       </li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div> <!-- // quick-link -->
+                       <div class="footer-main-menu contact-us">
+                           <div class="sub-title">
+                               <h4>Contact Us</h4>
+                           </div>
+                           <ul>
+                               <li class="address">We are working development at Phnom Penh, Cambodia.</li>
+                               
+                           </ul>
+                       </div> <!-- // contact-us -->
+                       <div class="footer-main-menu follow-us">
+                           <div class="sub-title">
+                               <h4>Follow us</h4>
+                           </div>
+                           <ul class="follow_us">
+                               <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.facebook.com/ចៅ-បាយក្តាំង-214353082064202/"><img
+                                           src="../assets/images/fb.png" alt="Fb"></a></li>                             
+                               <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.youtube.com/channel/UCag1QcFe-E22cxbddOl7iiw/playlists"><img
+                                           src="../assets/images/youtube.png" alt="YouTube"></a></li>
+                           </ul>
+
+                       </div> <!-- // information -->
+                   </div> <!-- // container -->
+               </div> <!-- // footer-top -->
+
+               <div class="footer-bottom">
+                   <div class="container-footer">
+                       <div class="copyright">Copyright © 2019 brocodings.com All Rights Reserved.</div>
+                       <div class="developedby">
+                           Developed by:
+                           <a href="../index.html" target="_blank" style="color:#ffffff;">
+                               brocodings.com
+                           </a>
+                       </div>
+                   </div> <!-- // container -->
+               </div> <!-- // footer-bottom -->
+
+           </div> <!-- // footer -->
+       </div> <!-- // wrapper -->
+       <script type="text/javascript" src="../assets/js/jquery.min.js"></script>       
+       <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+       <script type="text/javascript" src="../../cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+       <script type="text/javascript" src="../../cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+       
+       <script type="text/javascript">
+       $(document).ready(function() {
+           //data table
+           $('#datalesson').DataTable({
+            "pageLength": 50
+           });
+
+
+       });
+
+       </script>
+
+       </body>
+
+       
+<!-- Mirrored from www.brocodings.com/post/mssql?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a1%20%e1%9f%96Parameter%20%e1%9e%93%e1%9f%85%e1%9e%80%e1%9f%92%e1%9e%93%e1%9e%bb%e1%9e%84%20Stored%20Procedure by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Aug 2020 08:18:22 GMT -->
+</html>    

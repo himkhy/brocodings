@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<!-- Mirrored from www.brocodings.com/post/json?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a4%20%e1%9f%96%20JSON%20-%20DataTypes by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Aug 2020 08:19:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="Keywords"
+        content="HTML,CSS,JavaScript,MYSQL,MSSQL,PHP,jQuery,JSON,DOM,Bootstrap,C,C++,C#,Analysis System,Java,Web development,tutorials,programming,training,learning,lessons,examples,exercises,source code,colors,demos" />
+    <meta name="description" content="brocodings.com | មេរៀនទី៤ ៖ JSON - DataTypes" />
+    <title>brocodings.com | មេរៀនទី៤ ៖ JSON - DataTypes</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="../assets/css/bro-style.css" />
+    <link rel="stylesheet" href="../assets/css/customiz.html" />
+    <link rel="stylesheet" href="../assets/css/jquery.colorbox-min.html" />
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.html" />
+    <link rel="stylesheet" href="../assets/css/slick.min.html" />
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+       
+            <div class="container-fluid">
+                <nav class="navbar  fixed-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">BROCODINGS.COM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+           
+        </ul>
+        <ul class="navbar-nav">
+             <li class="nav-item"><a class="nav-link" href="../searchfilter.html"><i class="fa fa-search"
+                                            aria-hidden="true"></i></a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Video
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="../products/2.html">វីដេអូ CMS</a>
+                                                                                    </div>
+                                    </li>
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Libraries
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="json.html">json</a>
+                                                                                        <a class="dropdown-item"
+                                                href="flutter.html">flutter</a>
+                                                                                        <a class="dropdown-item"
+                                                href="Laravel.html">Laravel</a>
+                                                                                        <a class="dropdown-item"
+                                                href="computer.html">កុំព្យូទ័រ</a>
+                                                                                        <a class="dropdown-item"
+                                                href="wordPress.html">WordPress</a>
+                                                                                        <a class="dropdown-item"
+                                                href="mssql.html">MsSQL</a>
+                                                                                        <a class="dropdown-item"
+                                                href="css.html">css</a>
+                                                                                        <a class="dropdown-item"
+                                                href="html.html">html</a>
+                                                                                        <a class="dropdown-item"
+                                                href="dart.html">dart</a>
+                                                                                        <a class="dropdown-item"
+                                                href="crudbooster.html">crudbooster</a>
+                                                                                        <a class="dropdown-item"
+                                                href="kwdesign.html">colors design</a>
+                                                                                        <a class="dropdown-item"
+                                                href="c.html">c</a>
+                                                                                        <a class="dropdown-item"
+                                                href="mysql.html">mysql</a>
+                                                                                        <a class="dropdown-item"
+                                                href="powerpoint.html">powerpoint</a>
+                                                                                        <a class="dropdown-item"
+                                                href="photoshop.html">Photoshop</a>
+                                                                                        <a class="dropdown-item"
+                                                href="illustrator.html">Illustrator</a>
+                                                                                    </div>
+
+
+                                    </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Press Release
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="../press/4.html">project</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/3.html">book</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/2.html">Software</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/1.html">Template Web Design</a>
+                                                                                    </div>
+                                    </li>
+                                       
+                                    <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
+                                    <li class="nav-item"><a  class="nav-link" href="../contact.html">Contact Us</a></li>
+  
+        </ul>
+    </div>
+</nav>
+
+                      
+        </div><!-- container-fluid navibar-->
+    </div> <!-- // wrapper -->    
+                
+
+<div class="main-contianer">
+    <div class="container-lesson">
+        <div class="main-left position-fixed " id="sticky-sidebar">
+            <div class="list-title">
+                <div id="mylistLinks">
+
+                    <ul>
+                                                <li>
+                            <a href="json71a8.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%20%e1%9f%96%20JSON%20-%20Home">មេរៀនទី១ ៖ JSON - Home
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="json0115.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%20%e1%9f%96%20JSON%20-%20Overview">មេរៀនទី២ ៖ JSON - Overview
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="json4f8f.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%20%e1%9f%96%20JSON%20-%20Syntax">មេរៀនទី៣ ៖ JSON - Syntax
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="json9cf4.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a4%20%e1%9f%96%20JSON%20-%20DataTypes">មេរៀនទី៤ ៖ JSON - DataTypes
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="json0697.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a5%20%e1%9f%96%20JSON%20-%20Objects">មេរៀនទី៥ ៖ JSON - Objects
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="json5610.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a6%20%e1%9f%96%20JSON%20-%20Schema">មេរៀនទី៦ ៖ JSON - Schema
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="jsona9c3.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a7%20%e1%9f%96%20JSON%20-%20Comparison%20with%20XML">មេរៀនទី៧ ៖ JSON - Comparison w...
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="mysFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+        <!--main-left-->
+        <div class="mainlist">
+
+            
+            
+                        <h3> មេរៀនទី៤ ៖ JSON - DataTypes</h3>
+            <p> <p class="MsoNormal" style="line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="KHM" style="font-size: 12pt; font-family: " khmer="" os";"="">ទិន្នន័យ​ដែល​អាច​បញ្ជូន​តាម​រយៈ </span><span style="font-size: 12pt; font-family: " khmer="" os";"="">JSON <span lang="KHM">មាន</span>&nbsp;<span lang="KHM">៖</span><o:p></o:p></span></p><table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="722" style="width: 541.5pt; border: none;">
+ <tbody><tr>
+  <td width="62" valign="top" style="width:46.5pt;border:solid #DDDDDD 1.0pt;
+  mso-border-alt:solid #DDDDDD .75pt;background:#EEEEEE;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:15.0pt;text-align:center"><b><span style="font-size:10.5pt;line-height:107%;font-family:" arial",sans-serif"="">Sr.No.<o:p></o:p></span></b></p>
+  </td>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-left:none;mso-border-left-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;background:#EEEEEE;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:15.0pt;text-align:center"><b><span style="font-size: 10.5pt; line-height: 107%; font-family: Arial, sans-serif;">Type &amp; Description</span></b><b><span style="font-size:10.5pt;line-height:107%;font-family:" arial",sans-serif"=""><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt"><span style="font-size:10.5pt;
+  line-height:107%;font-family:" arial",sans-serif"="">1<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal" style="margin: 6pt 6pt 6pt 18pt; text-indent: -18pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><b><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Number</span></b><b><span style="font-size: 10.5pt; font-family: " cambria="" math",="" serif;"="">​ </span></b><b><span lang="KHM" style="font-size: 12pt; font-family: " khmer="" os";"="">លេខ&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 10.5pt; text-align: justify; background-color: transparent;">double-
+  precision floating-point format in JavaScript</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">2<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">String</span></b><b><span style="font-size: 10.5pt; font-family: " cambria="" math",="" serif;"="">​</span></b><b><span style="font-size: 10.5pt; font-family: " cambria="" math",="" serif;"=""> </span></b><b><span lang="KHM" style="font-family: " khmer="" os";"="">អក្សរ</span></b><span lang="KHM" style="font-family: " khmer="" os";"=""> ត្រូវ​សរសេរ​ក្នុង
+  </span><span style="font-family: " khmer="" os";"="">""&nbsp;&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 10.5pt; background-color: transparent;">double-quoted
+  Unicode with backslash escaping</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">3<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Boolean </span></b><span lang="KHM" style="font-family: " khmer="" os";"="">មាន </span><span style="font-family: " khmer="" os";"="">true <span lang="KHM">ឬ </span>false&nbsp;&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">4<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Array </span></b><span lang="KHM" style="font-family: " khmer="" os";"="">សំរាប់​ផ្ទុក​ច្រើន​តម្លៃ​ចូល​គ្នា
+  ដែល​ត្រូវ​សរសេរ​នៅ​ក្នុង </span><span style="font-family: " khmer="" os";"="">[] <span lang="KHM">ហើយ​តម្លៃ​នីមួយ​ត្រូវ​ផ្ដាច់​គ្នា​ដោយ
+  </span>,&nbsp;<span lang="KHM">។</span></span><span style="font-size: 10.5pt; font-family: Arial, sans-serif;"><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">5<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Value&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 10.5pt; background-color: transparent;">it can be
+  a string, a number, true or false, null etc</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">6<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Object </span></b><span lang="KHM" style="font-family: " khmer="" os";"="">សំរាប់​ផ្ទុក​ច្រើន​តម្លៃ
+  ដែល​ត្រូវ​សរសេរ​នៅ​ក្នុង </span><span style="font-family: " khmer="" os";"="">{} <span lang="KHM">ហើយ​តម្លៃ​នីមួយៗ​យើង​អាច​កំណត់​ឈ្មោះ​ទៅ​ឲ្យ​វា​បាន
+  មាន​សណ្ឋាន </span>"<span lang="KHM">ឈ្មោះ": តម្លៃ</span>&nbsp;<span lang="KHM">។</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">7<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Whitespace&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 10.5pt; background-color: transparent;">can be
+  used between any pair of tokens</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">8<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Null </span></b><span lang="KHM" style="font-family: " khmer="" os";"="">មាន​ន័យ​ថា
+  ទទេ</span><span style="font-family: " khmer="" os";"="">&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table><p style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 2rem; color: rgba(0, 0, 0, 0.87);"><b><span style="font-size:17.5pt;line-height:107%;font-family:" arial",sans-serif"="">Number</span></b></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l0 level1 lfo2;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">It is a double precision floating-point format in JavaScript and
+it depends on implementation.<o:p></o:p></span></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l0 level1 lfo2;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Octal and hexadecimal formats are not used.<o:p></o:p></span></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l0 level1 lfo2;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">No NaN or Infinity is used in Number.<o:p></o:p></span></p><p style="margin: 6pt 2.4pt 7.2pt; text-align: justify;"><span style="font-family: Arial, sans-serif;">The following
+table shows the number types −<o:p></o:p></span></p><table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="722" style="width: 541.5pt; border: none; max-width: 100%; color: rgba(0, 0, 0, 0.87);">
+ <tbody><tr>
+  <td width="62" valign="top" style="width:46.5pt;border:solid #DDDDDD 1.0pt;
+  mso-border-alt:solid #DDDDDD .75pt;background:#EEEEEE;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:15.0pt;text-align:center"><b><span style="font-size:10.5pt;line-height:107%;font-family:" arial",sans-serif"="">Sr.No.<o:p></o:p></span></b></p>
+  </td>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-left:none;mso-border-left-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;background:#EEEEEE;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:15.0pt;text-align:center"><b><span style="font-size:10.5pt;line-height:107%;font-family:" arial",sans-serif;="" color:black;mso-color-alt:windowtext"="">Type &amp; Description</span></b><b><span style="font-size:10.5pt;line-height:107%;font-family:" arial",sans-serif"=""><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt"><span style="font-size:10.5pt;
+  line-height:107%;font-family:" arial",sans-serif"="">1<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">Integer</span></b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"=""><o:p></o:p></span></p>
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">Digits
+  1-9, 0 and positive or negative<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">2<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">Fraction</span></b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"=""><o:p></o:p></span></p>
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">Fractions
+  like .3, .9<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">3<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">Exponent</span></b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"=""><o:p></o:p></span></p>
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">Exponent
+  like e, e+, e-, E, E+, E-<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif; color: white;">Syntax</span><span style="font-family: Arial, sans-serif;"><o:p></o:p></span></h3><pre style="color: rgba(0, 0, 0, 0.87);"><span style="font-size:11.5pt">var json-object-name = { string : number_value, .......}<o:p></o:p></span></pre><p style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Example</span></p><p style="margin: 6pt 2.4pt 7.2pt; text-align: justify;"><span style="font-family: Arial, sans-serif;">Example showing
+Number Datatype, value should not be quoted −<o:p></o:p></span></p><div style="mso-element:para-border-div;border:solid #888888 1.0pt;mso-border-alt:
+solid #888888 .75pt;padding:2.0pt 2.0pt 2.0pt 2.0pt"><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm; color: rgba(0, 0, 0, 0.87);"><span class="kwd"><span style="font-size:11.5pt;color:#000088">var</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> obj </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">=</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">{</span></span><span class="pln"><span style="font-size:11.5pt;color:black">marks</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="lit"><span style="font-size:11.5pt;color:#006666">97</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">}</span></span><span style="font-size:11.5pt"><o:p></o:p></span></pre></div><p style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 2rem; color: rgba(0, 0, 0, 0.87);"><b><span style="font-size:17.5pt;line-height:107%;font-family:" arial",sans-serif"="">String</span></b></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l2 level1 lfo3;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">It is a sequence of zero or more double quoted Unicode characters
+with backslash escaping.<o:p></o:p></span></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l2 level1 lfo3;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Character is a single character string i.e. a string with length
+1.<o:p></o:p></span></p><p style="margin: 6pt 2.4pt 7.2pt; text-align: justify;"><span style="font-family: Arial, sans-serif;">The table shows
+various special characters that you can use in strings of a JSON document −<o:p></o:p></span></p><table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="722" style="width: 541.5pt; border: none; max-width: 100%; color: rgba(0, 0, 0, 0.87);">
+ <tbody><tr>
+  <td width="62" valign="top" style="width:46.5pt;border:solid #DDDDDD 1.0pt;
+  mso-border-alt:solid #DDDDDD .75pt;background:#EEEEEE;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:15.0pt;text-align:center"><b><span style="font-size:10.5pt;line-height:107%;font-family:" arial",sans-serif"="">Sr.No<span style="color:black;mso-color-alt:windowtext">.</span><o:p></o:p></span></b></p>
+  </td>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-left:none;mso-border-left-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;background:#EEEEEE;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:15.0pt;text-align:center"><b><span style="font-size:10.5pt;line-height:107%;font-family:" arial",sans-serif;="" color:black;mso-color-alt:windowtext"="">Type &amp; Description</span></b><b><span style="font-size:10.5pt;line-height:107%;font-family:" arial",sans-serif"=""><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt"><span style="font-size:10.5pt;
+  line-height:107%;font-family:" arial",sans-serif"="">1<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">"&nbsp;</span></b><span style="font-size: 10.5pt; background-color: transparent;">double
+  quotation</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">2<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">\&nbsp;</span></b><span style="font-size: 10.5pt; background-color: transparent;">backslash</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">3<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">/&nbsp;</span></b><span style="font-size: 10.5pt; background-color: transparent;">forward
+  slash</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">4<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">b&nbsp;</span></b><span style="font-size: 10.5pt; background-color: transparent;">backspace</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">5<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">f</span></b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"=""><o:p></o:p></span></p>
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">form feed<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">6<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">n&nbsp;</span></b><span style="font-size: 10.5pt; background-color: transparent;">new line</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">7<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">r&nbsp;</span></b><span style="font-size: 10.5pt; background-color: transparent;">carriage
+  return</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">8<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">t&nbsp;</span></b><span style="font-size: 10.5pt; background-color: transparent;">horizontal
+  tab</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="border:solid #DDDDDD 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p class="MsoNormal"><span style="font-size:10.5pt;line-height:107%;font-family:
+  " arial",sans-serif"="">9<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;mso-border-top-alt:solid #DDDDDD .75pt;
+  mso-border-left-alt:solid #DDDDDD .75pt;mso-border-alt:solid #DDDDDD .75pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt">
+  <p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+  2.4pt;text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:10.5pt;font-family:" arial",sans-serif;color:black"="">u&nbsp;</span></b><span style="font-size: 10.5pt; background-color: transparent;">four
+  hexadecimal digits</span></p>
+  </td>
+ </tr>
+</tbody></table><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif; color: white;">Syntax</span><span style="font-family: Arial, sans-serif;"><o:p></o:p></span></h3><pre style="color: rgba(0, 0, 0, 0.87);"><span style="font-size:11.5pt">var json-object-name = { string : "string value", .......}<o:p></o:p></span></pre><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Example<o:p></o:p></span></h3><p style="margin: 6pt 2.4pt 7.2pt; text-align: justify;"><span style="font-family: Arial, sans-serif;">Example showing
+String Datatype −<o:p></o:p></span></p><div style="mso-element:para-border-div;border:solid #888888 1.0pt;mso-border-alt:
+solid #888888 .75pt;padding:2.0pt 2.0pt 2.0pt 2.0pt"><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm; color: rgba(0, 0, 0, 0.87);"><span class="kwd"><span style="font-size:11.5pt;color:#000088">var</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> obj </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">=</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">{</span></span><span class="pln"><span style="font-size:11.5pt;color:black">name</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">'Amit'</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">}</span></span><span style="font-size:11.5pt"><o:p></o:p></span></pre></div><p style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 2rem; color: rgba(0, 0, 0, 0.87);"><b><span style="font-size:17.5pt;line-height:107%;font-family:" arial",sans-serif"="">Boolean</span></b></p><p style="margin: 6pt 2.4pt 7.2pt; text-align: justify;"><span style="font-family: Arial, sans-serif;">It includes true
+or false values.<o:p></o:p></span></p><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Syntax<o:p></o:p></span></h3><pre style="color: rgba(0, 0, 0, 0.87);"><span style="font-size:11.5pt">var json-object-name = { string : true/false, .......}<o:p></o:p></span></pre><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Example<o:p></o:p></span></h3><div style="mso-element:para-border-div;border:solid #888888 1.0pt;mso-border-alt:
+solid #888888 .75pt;padding:2.0pt 2.0pt 2.0pt 2.0pt"><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm; color: rgba(0, 0, 0, 0.87);"><span class="kwd"><span style="font-size:11.5pt;color:#000088">var</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> obj </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">=</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">{</span></span><span class="pln"><span style="font-size:11.5pt;color:black">name</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">'Amit'</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">,</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> marks</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="lit"><span style="font-size:11.5pt;color:#006666">97</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">,</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> distinction</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="kwd"><span style="font-size:11.5pt;color:#000088">true</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">}</span></span><span style="font-size:11.5pt"><o:p></o:p></span></pre></div><p style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 2rem; color: rgba(0, 0, 0, 0.87);"><b><span style="font-size:17.5pt;line-height:107%;font-family:" arial",sans-serif"="">Array</span></b></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l1 level1 lfo4;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">It is an ordered collection of values.<o:p></o:p></span></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l1 level1 lfo4;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">These are enclosed in square brackets which means that array
+begins with .[. and ends with .]..<o:p></o:p></span></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l1 level1 lfo4;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">The values are separated by , (comma).<o:p></o:p></span></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l1 level1 lfo4;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Array indexing can be started at 0 or 1.<o:p></o:p></span></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l1 level1 lfo4;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Arrays should be used when the key names are sequential integers.<o:p></o:p></span></p><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Syntax<o:p></o:p></span></h3><pre style="color: rgba(0, 0, 0, 0.87);"><span style="font-size:11.5pt">[ value, .......]<o:p></o:p></span></pre><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Example<o:p></o:p></span></h3><p style="margin: 6pt 2.4pt 7.2pt; text-align: justify;"><span style="font-family: Arial, sans-serif;">Example showing
+array containing multiple objects −<o:p></o:p></span></p><div style="mso-element:para-border-div;border:solid #888888 1.0pt;mso-border-alt:
+solid #888888 .75pt;padding:2.0pt 2.0pt 2.0pt 2.0pt"><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm; color: rgba(0, 0, 0, 0.87);"><span class="pun"><span style="font-size:11.5pt;color:#666600">{</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pln"><span style="font-size:11.5pt;
+color:black">&nbsp;&nbsp; </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"books"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">[</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pln"><span style="font-size:11.5pt;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">{</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"language"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"Java"</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">,</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"edition"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"second"</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">},</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pln"><span style="font-size:11.5pt;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">{</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"language"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"C++"</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">,</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"lastName"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"fifth"</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">},</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pln"><span style="font-size:11.5pt;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">{</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"language"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"C"</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">,</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"lastName"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"third"</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">}</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pln"><span style="font-size:11.5pt;
+color:black">&nbsp;&nbsp; </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">]</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pun"><span style="font-size:11.5pt;
+color:#666600">}</span></span><span style="font-size:11.5pt"><o:p></o:p></span></pre></div><p style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 2rem; color: rgba(0, 0, 0, 0.87);"><b><span style="font-size:17.5pt;line-height:107%;font-family:" arial",sans-serif"="">Object</span></b></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l3 level1 lfo5;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">It is an unordered set of name/value pairs.<o:p></o:p></span></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l3 level1 lfo5;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Objects are enclosed in curly braces that is, it starts with '{'
+and ends with '}'.<o:p></o:p></span></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l3 level1 lfo5;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Each name is followed by ':'(colon) and the key/value pairs are
+separated by , (comma).<o:p></o:p></span></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l3 level1 lfo5;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">The keys must be strings and should be different from each other.<o:p></o:p></span></p><p style="margin-top:6.0pt;margin-right:2.4pt;margin-bottom:7.2pt;margin-left:
+38.4pt;text-align:justify;text-justify:inter-ideograph;text-indent:-18.0pt;
+mso-list:l3 level1 lfo5;tab-stops:list 36.0pt"><!--[if !supportLists]--><span style="font-size: 10pt; font-family: Symbol;">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: " times="" new="" roman";"="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size: 10.5pt; font-family: Arial, sans-serif;">Objects should be used when the key names are arbitrary strings.<o:p></o:p></span></p><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Syntax<o:p></o:p></span></h3><pre style="color: rgba(0, 0, 0, 0.87);"><span style="font-size:11.5pt">{ string : value, .......}<o:p></o:p></span></pre><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Example<o:p></o:p></span></h3><p style="margin: 6pt 2.4pt 7.2pt; text-align: justify;"><span style="font-family: Arial, sans-serif;">Example showing
+Object −<o:p></o:p></span></p><div style="mso-element:para-border-div;border:solid #888888 1.0pt;mso-border-alt:
+solid #888888 .75pt;padding:2.0pt 2.0pt 2.0pt 2.0pt"><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm; color: rgba(0, 0, 0, 0.87);"><span class="pun"><span style="font-size:11.5pt;color:#666600">{</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pln"><span style="font-size:11.5pt;
+color:black">&nbsp;&nbsp; </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"id"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"011A"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">,</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pln"><span style="font-size:11.5pt;
+color:black">&nbsp;&nbsp; </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"language"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"JAVA"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">,</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pln"><span style="font-size:11.5pt;
+color:black">&nbsp;&nbsp; </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"price"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="lit"><span style="font-size:11.5pt;color:#006666">500</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">,</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pun"><span style="font-size:11.5pt;
+color:#666600">}</span></span><span style="font-size:11.5pt"><o:p></o:p></span></pre></div><p style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 2rem; color: rgba(0, 0, 0, 0.87);"><b><span style="font-size:17.5pt;line-height:107%;font-family:" arial",sans-serif"="">Whitespace</span></b></p><p style="margin: 6pt 2.4pt 7.2pt; text-align: justify;"><span style="font-family: Arial, sans-serif;">It can be
+inserted between any pair of tokens. It can be added to make a code more
+readable. Example shows declaration with and without whitespace −<o:p></o:p></span></p><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Syntax<o:p></o:p></span></h3><pre style="color: rgba(0, 0, 0, 0.87);"><span style="font-size:11.5pt">{string:" ",....}<o:p></o:p></span></pre><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Example<o:p></o:p></span></h3><div style="mso-element:para-border-div;border:solid #888888 1.0pt;mso-border-alt:
+solid #888888 .75pt;padding:2.0pt 2.0pt 2.0pt 2.0pt"><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm; color: rgba(0, 0, 0, 0.87);"><span class="kwd"><span style="font-size:11.5pt;color:#000088">var</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> obj1 </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">=</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">{</span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"name"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"Sachin Tendulkar"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">}</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="kwd"><span style="font-size:11.5pt;
+color:#000088">var</span></span><span class="pln"><span style="font-size:11.5pt;
+color:black"> obj2 </span></span><span class="pun"><span style="font-size:11.5pt;
+color:#666600">=</span></span><span class="pln"><span style="font-size:11.5pt;
+color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;
+color:#666600">{</span></span><span class="str"><span style="font-size:11.5pt;
+color:#008800">"name"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">:</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"SauravGanguly"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">}</span></span><span style="font-size:11.5pt"><o:p></o:p></span></pre></div><p style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 2rem; color: rgba(0, 0, 0, 0.87);"><b><span style="font-size:17.5pt;line-height:107%;font-family:" arial",sans-serif"="">null</span></b></p><p style="margin: 6pt 2.4pt 7.2pt; text-align: justify;"><span style="font-family: Arial, sans-serif;">It means empty
+type.<o:p></o:p></span></p><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Syntax<o:p></o:p></span></h3><pre style="color: rgba(0, 0, 0, 0.87);"><span style="font-size:11.5pt">null<o:p></o:p></span></pre><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Example<o:p></o:p></span></h3><div style="mso-element:para-border-div;border:solid #888888 1.0pt;mso-border-alt:
+solid #888888 .75pt;padding:2.0pt 2.0pt 2.0pt 2.0pt"><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm; color: rgba(0, 0, 0, 0.87);"><span class="kwd"><span style="font-size:11.5pt;color:#000088">var</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> i </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">=</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="kwd"><span style="font-size:11.5pt;color:#000088">null</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">;</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pln"><span style="font-size:11.5pt;
+color:black"><o:p>&nbsp;</o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="kwd"><span style="font-size:11.5pt;color:#000088">if</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">(</span></span><span class="pln"><span style="font-size:11.5pt;color:black">i </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">==</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="lit"><span style="font-size:11.5pt;color:#006666">1</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">)</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">{</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pln"><span style="font-size:11.5pt;
+color:black">&nbsp;&nbsp; document</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">.</span></span><span class="pln"><span style="font-size:11.5pt;color:black">write</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">(</span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"<h1>value is 1</h1>"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">);</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pun"><span style="font-size:11.5pt;
+color:#666600">}</span></span><span class="pln"><span style="font-size:11.5pt;
+color:black"> </span></span><span class="kwd"><span style="font-size:11.5pt;
+color:#000088">else</span></span><span class="pln"><span style="font-size:11.5pt;
+color:black"> </span></span><span class="pun"><span style="font-size:11.5pt;
+color:#666600">{</span></span><span class="pln"><span style="font-size:11.5pt;
+color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pln"><span style="font-size:11.5pt;color:black">&nbsp;&nbsp; document</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">.</span></span><span class="pln"><span style="font-size:11.5pt;color:black">write</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">(</span></span><span class="str"><span style="font-size:11.5pt;color:#008800">"<h1>value is null</h1>"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">);</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="pun"><span style="font-size:11.5pt;
+color:#666600">}</span></span><span style="font-size:11.5pt"><o:p></o:p></span></pre></div><p style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 2rem; color: rgba(0, 0, 0, 0.87);"><b><span style="font-size:17.5pt;line-height:107%;font-family:" arial",sans-serif"="">JSON
+Value</span></b></p><p style="margin: 6pt 2.4pt 7.2pt; text-align: justify;"><span style="font-family: Arial, sans-serif;">It includes −<o:p></o:p></span></p><ul type="disc" style="margin-bottom: 0.625rem; color: rgba(0, 0, 0, 0.87);">
+ <li class="MsoNormal" style="mso-margin-top-alt:auto;margin-bottom:3.75pt;
+     line-height:normal;mso-list:l5 level1 lfo6;tab-stops:list 36.0pt;
+     background-position-x:0px;background-position-y:3px"><span style="font-size:10.5pt;font-family:" arial",sans-serif"="">number (integer or
+     floating point)<o:p></o:p></span></li>
+ <li class="MsoNormal" style="mso-margin-top-alt:auto;margin-bottom:3.75pt;
+     line-height:normal;mso-list:l5 level1 lfo6;tab-stops:list 36.0pt;
+     background-position-x:0px;background-position-y:3px"><span style="font-size:10.5pt;font-family:" arial",sans-serif"="">string<o:p></o:p></span></li>
+ <li class="MsoNormal" style="mso-margin-top-alt:auto;margin-bottom:3.75pt;
+     line-height:normal;mso-list:l5 level1 lfo6;tab-stops:list 36.0pt;
+     background-position-x:0px;background-position-y:3px"><span style="font-size:10.5pt;font-family:" arial",sans-serif"="">boolean<o:p></o:p></span></li>
+ <li class="MsoNormal" style="mso-margin-top-alt:auto;margin-bottom:3.75pt;
+     line-height:normal;mso-list:l5 level1 lfo6;tab-stops:list 36.0pt;
+     background-position-x:0px;background-position-y:3px"><span style="font-size:10.5pt;font-family:" arial",sans-serif"="">array<o:p></o:p></span></li>
+ <li class="MsoNormal" style="mso-margin-top-alt:auto;margin-bottom:3.75pt;
+     line-height:normal;mso-list:l5 level1 lfo6;tab-stops:list 36.0pt;
+     background-position-x:0px;background-position-y:3px"><span style="font-size:10.5pt;font-family:" arial",sans-serif"="">object<o:p></o:p></span></li>
+ <li class="MsoNormal" style="mso-margin-top-alt:auto;margin-bottom:3.75pt;
+     line-height:normal;mso-list:l5 level1 lfo6;tab-stops:list 36.0pt;
+     background-position-x:0px;background-position-y:3px"><span style="font-size:10.5pt;font-family:" arial",sans-serif"="">null<o:p></o:p></span></li>
+</ul><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Syntax<o:p></o:p></span></h3><pre style="color: rgba(0, 0, 0, 0.87);"><span style="font-size:11.5pt">String | Number | Object | Array | TRUE | FALSE | NULL<o:p></o:p></span></pre><h3 style="margin-top: 1.25rem; margin-bottom: 0.625rem; line-height: 1.75rem; color: rgba(0, 0, 0, 0.87);"><span style="font-family: Arial, sans-serif;">Example<o:p></o:p></span></h3><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><div style="mso-element:para-border-div;border:solid #888888 1.0pt;mso-border-alt:
+solid #888888 .75pt;padding:2.0pt 2.0pt 2.0pt 2.0pt"><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm; color: rgba(0, 0, 0, 0.87);"><span class="kwd"><span style="font-size:11.5pt;color:#000088">var</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> i </span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">=</span></span><span class="pln"><span style="font-size:11.5pt;color:black"> </span></span><span class="lit"><span style="font-size:11.5pt;color:#006666">1</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">;</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="kwd"><span style="font-size:11.5pt;
+color:#000088">var</span></span><span class="pln"><span style="font-size:11.5pt;
+color:black"> j </span></span><span class="pun"><span style="font-size:11.5pt;
+color:#666600">=</span></span><span class="pln"><span style="font-size:11.5pt;
+color:black"> </span></span><span class="str"><span style="font-size:11.5pt;
+color:#008800">"sachin"</span></span><span class="pun"><span style="font-size:11.5pt;color:#666600">;</span></span><span class="pln"><span style="font-size:11.5pt;color:black"><o:p></o:p></span></span></pre><pre style="border-width: initial; border-style: none; border-color: initial; padding: 0cm;"><span class="kwd"><span style="font-size:11.5pt;
+color:#000088">var</span></span><span class="pln"><span style="font-size:11.5pt;
+color:black"> k </span></span><span class="pun"><span style="font-size:11.5pt;
+color:#666600">=</span></span><span class="pln"><span style="font-size:11.5pt;
+color:black"> </span></span><span class="kwd"><span style="font-size:11.5pt;
+color:#000088">null</span></span><span class="pun"><span style="font-size:11.5pt;
+color:#666600">;</span></span><span style="font-size:11.5pt"><o:p></o:p></span></pre></div></p>
+            
+
+            
+
+
+        </div>
+        <!--mainlist-->
+
+
+    </div>
+    <!--container-->
+
+
+
+</div>
+<!--main-contianer-->
+<style type="text/css">
+    .mainfooter {
+    display: none !important;
+}
+</style>
+
+          
+
+     <div class="mainfooter">
+       <div class="wrapper">
+           <div class="footer">
+               <div class="footer-top">
+                   <a href="#" class="scrollup" style="display: none;">Go Top</a>
+                   <div class="container">
+                       <div class="footer-main-menu quick-link">
+                           <div class="sub-title">
+                               <h4>Quick Link</h4>
+                           </div>
+                           <div class="menu-quick-link-menu-container">
+                               <div class="menu-quick-link-container">
+                                   <ul id="menu-quick-link" class="menu">
+                                       <li>
+                                           <a href="../about.html">About Us</a></li>
+                                       <li>
+                                           <a href="../contact.html">Contact Us</a>
+                                       </li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div> <!-- // quick-link -->
+                       <div class="footer-main-menu contact-us">
+                           <div class="sub-title">
+                               <h4>Contact Us</h4>
+                           </div>
+                           <ul>
+                               <li class="address">We are working development at Phnom Penh, Cambodia.</li>
+                               
+                           </ul>
+                       </div> <!-- // contact-us -->
+                       <div class="footer-main-menu follow-us">
+                           <div class="sub-title">
+                               <h4>Follow us</h4>
+                           </div>
+                           <ul class="follow_us">
+                               <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.facebook.com/ចៅ-បាយក្តាំង-214353082064202/"><img
+                                           src="../assets/images/fb.png" alt="Fb"></a></li>                             
+                               <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.youtube.com/channel/UCag1QcFe-E22cxbddOl7iiw/playlists"><img
+                                           src="../assets/images/youtube.png" alt="YouTube"></a></li>
+                           </ul>
+
+                       </div> <!-- // information -->
+                   </div> <!-- // container -->
+               </div> <!-- // footer-top -->
+
+               <div class="footer-bottom">
+                   <div class="container-footer">
+                       <div class="copyright">Copyright © 2019 brocodings.com All Rights Reserved.</div>
+                       <div class="developedby">
+                           Developed by:
+                           <a href="../index.html" target="_blank" style="color:#ffffff;">
+                               brocodings.com
+                           </a>
+                       </div>
+                   </div> <!-- // container -->
+               </div> <!-- // footer-bottom -->
+
+           </div> <!-- // footer -->
+       </div> <!-- // wrapper -->
+       <script type="text/javascript" src="../assets/js/jquery.min.js"></script>       
+       <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+       <script type="text/javascript" src="../../cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+       <script type="text/javascript" src="../../cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+       
+       <script type="text/javascript">
+       $(document).ready(function() {
+           //data table
+           $('#datalesson').DataTable({
+            "pageLength": 50
+           });
+
+
+       });
+
+       </script>
+
+       </body>
+
+       
+<!-- Mirrored from www.brocodings.com/post/json?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a4%20%e1%9f%96%20JSON%20-%20DataTypes by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Aug 2020 08:19:46 GMT -->
+</html>    

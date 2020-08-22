@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<!-- Mirrored from www.brocodings.com/post/c?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a4%20%e1%9f%96%20Loop%20Control%20Structure by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Aug 2020 08:17:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="Keywords"
+        content="HTML,CSS,JavaScript,MYSQL,MSSQL,PHP,jQuery,JSON,DOM,Bootstrap,C,C++,C#,Analysis System,Java,Web development,tutorials,programming,training,learning,lessons,examples,exercises,source code,colors,demos" />
+    <meta name="description" content="brocodings.com | មេរៀនទី ៤ ៖ Loop Control Structure" />
+    <title>brocodings.com | មេរៀនទី ៤ ៖ Loop Control Structure</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="../assets/css/bro-style.css" />
+    <link rel="stylesheet" href="../assets/css/customiz.html" />
+    <link rel="stylesheet" href="../assets/css/jquery.colorbox-min.html" />
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.html" />
+    <link rel="stylesheet" href="../assets/css/slick.min.html" />
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+       
+            <div class="container-fluid">
+                <nav class="navbar  fixed-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">BROCODINGS.COM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+           
+        </ul>
+        <ul class="navbar-nav">
+             <li class="nav-item"><a class="nav-link" href="../searchfilter.html"><i class="fa fa-search"
+                                            aria-hidden="true"></i></a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Video
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="../products/2.html">វីដេអូ CMS</a>
+                                                                                    </div>
+                                    </li>
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Libraries
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="json.html">json</a>
+                                                                                        <a class="dropdown-item"
+                                                href="flutter.html">flutter</a>
+                                                                                        <a class="dropdown-item"
+                                                href="Laravel.html">Laravel</a>
+                                                                                        <a class="dropdown-item"
+                                                href="computer.html">កុំព្យូទ័រ</a>
+                                                                                        <a class="dropdown-item"
+                                                href="wordPress.html">WordPress</a>
+                                                                                        <a class="dropdown-item"
+                                                href="mssql.html">MsSQL</a>
+                                                                                        <a class="dropdown-item"
+                                                href="css.html">css</a>
+                                                                                        <a class="dropdown-item"
+                                                href="html.html">html</a>
+                                                                                        <a class="dropdown-item"
+                                                href="dart.html">dart</a>
+                                                                                        <a class="dropdown-item"
+                                                href="crudbooster.html">crudbooster</a>
+                                                                                        <a class="dropdown-item"
+                                                href="kwdesign.html">colors design</a>
+                                                                                        <a class="dropdown-item"
+                                                href="c.html">c</a>
+                                                                                        <a class="dropdown-item"
+                                                href="mysql.html">mysql</a>
+                                                                                        <a class="dropdown-item"
+                                                href="powerpoint.html">powerpoint</a>
+                                                                                        <a class="dropdown-item"
+                                                href="photoshop.html">Photoshop</a>
+                                                                                        <a class="dropdown-item"
+                                                href="illustrator.html">Illustrator</a>
+                                                                                    </div>
+
+
+                                    </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Press Release
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="../press/4.html">project</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/3.html">book</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/2.html">Software</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/1.html">Template Web Design</a>
+                                                                                    </div>
+                                    </li>
+                                       
+                                    <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
+                                    <li class="nav-item"><a  class="nav-link" href="../contact.html">Contact Us</a></li>
+  
+        </ul>
+    </div>
+</nav>
+
+                      
+        </div><!-- container-fluid navibar-->
+    </div> <!-- // wrapper -->    
+                
+
+<div class="main-contianer">
+    <div class="container-lesson">
+        <div class="main-left position-fixed " id="sticky-sidebar">
+            <div class="list-title">
+                <div id="mylistLinks">
+
+                    <ul>
+                                                <li>
+                            <a href="c9896.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a1%20%e1%9f%96%20%e1%9e%80%e1%9e%b6%e1%9e%9a%e1%9e%8e%e1%9f%82%e1%9e%93%e1%9e%b6%e1%9f%86%e1%9e%9f%e1%9f%92%e1%9e%82%e1%9e%b6%e1%9e%9b%e1%9f%8b%e1%9e%96%e1%9e%b8%20C%20PROGRAMMING">មេរៀនទី ១ ៖ ការណែនាំស្គាល់ពី C...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="c0d80.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a2%20%e1%9f%96%20%e1%9e%a2%e1%9e%90%e1%9f%81%20%e1%9e%93%e1%9e%b7%e1%9e%84%e1%9e%94%e1%9f%92%e1%9e%9a%e1%9e%97%e1%9f%81%e1%9e%91%e1%9e%91%e1%9e%b7%e1%9e%93%e1%9f%92%e1%9e%93%e1%9f%90%e1%9e%99">មេរៀនទី ២ ៖ អថេ និងប្រភេទទិន្ន...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="c1cdf.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%20%e1%9f%96%20Control%20Structure">មេរៀនទី ៣ ៖ Control Structure
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="cc4fa.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a4%20%e1%9f%96%20Loop%20Control%20Structure">មេរៀនទី ៤ ៖ Loop Control Struc...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="cf3a2.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a5%20%e1%9f%96%20Function">មេរៀនទី ៥ ៖ Function
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="cf04f.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a6%20%e1%9f%96%20Array">មេរៀនទី ៦ ៖ Array
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="c70c9.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a7%20%e1%9f%96%20Pointer">មេរៀនទី ៧ ៖ Pointer
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="ceaf7.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a8%20%e1%9f%96%20File">មេរៀនទី ៨ ៖ File
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="mysFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+        <!--main-left-->
+        <div class="mainlist">
+
+            
+            
+                        <h3> មេរៀនទី ៤ ៖ Loop Control Structure</h3>
+            <p> <p class="MsoNormal" style="margin-top:0cm;margin-right:.6pt;margin-bottom:2.55pt;
+margin-left:0cm"><font face="Times New Roman"><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">នោក្នុងផ្នែកនេះយើង នឹងបង្ហាញពីរដំណើរការ</span> Repeat Statement <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ឬ</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">មួយ</span> Block Statement <span lang="KHM" style="mso-bidi-font-size:11.0pt;
+line-height:102%">ដោយប្រើ&nbsp;</span></font><span lang="KHM" style="font-family: &quot;Times New Roman&quot;; line-height: 102%;">លក្ខណៈអី្វមួយ</span><span lang="KHM" style="font-family: &quot;Times New Roman&quot;;"> </span><span lang="KHM" style="font-family: &quot;Times New Roman&quot;; line-height: 102%;">ហៅថា</span><span style="font-family: &quot;Times New Roman&quot;;"> Loop </span><span lang="KHM" style="font-family: &quot;Times New Roman&quot;; line-height: 102%;">។</span><span lang="KHM" style="font-family: &quot;Times New Roman&quot;;"> </span><span lang="KHM" style="font-family: &quot;Times New Roman&quot;; line-height: 102%;">ក្នុងភាសារ</span><span style="font-family: &quot;Times New Roman&quot;;"> C Loop </span><span lang="KHM" style="font-family: &quot;Times New Roman&quot;; line-height: 102%;">មានបី</span><span lang="KHM" style="font-family: &quot;Times New Roman&quot;;"> </span><span lang="KHM" style="font-family: &quot;Times New Roman&quot;; line-height: 102%;">ប្រភេទគឺ</span><span lang="KHM" style="font-family: &quot;Times New Roman&quot;;"> </span><span lang="KHM" style="font-family: &quot;Times New Roman&quot;; line-height: 102%;">៖</span></p><p class="MsoNormal" align="left" style="margin-left: -0.75pt; text-indent: 0cm;"><font face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">១</span>. While
+Loop Statement <o:p></o:p></font></p><p class="MsoNormal" align="left" style="margin-left: -0.75pt; text-indent: 0cm;"><font face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">២</span>. do_while
+Loop Statement <o:p></o:p></font></p><p class="MsoNormal" align="left" style="margin-left: -0.75pt; text-indent: 0cm;"><font face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">៣</span>. For Loop
+Statement&nbsp; <o:p></o:p></font></p><p class="MsoNormal" style="margin-top:0cm;margin-right:.6pt;margin-bottom:.3pt;
+margin-left:-.25pt"><font face="Times New Roman">&nbsp;Loop <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">គឺជាក្រុមនៃ</span>
+Instruction Computer <span lang="KHM" style="mso-bidi-font-size:11.0pt;
+line-height:102%">មួយដែល</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">សកម្មភាពរបស់វាដដែរៗ</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">ដោយគោរពតាមអថេរ</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ពិសេសណាមួយនៅពេលដែល</span>
+Control Variable <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">នៅតែពិត</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:
+11.0pt;line-height:102%">។</span></font></p><p class="MsoNormal" style="margin-top:0cm;margin-right:10.7pt;margin-bottom:
+.3pt;margin-left:0cm;text-indent:0cm"><font face="Times New Roman"><b><i><span style="font-size: 12pt; line-height: 102%;">While Loop Statement</span></i></b><i><span style="font-size: 12pt; line-height: 102%;"> </span></i><span style="font-size: 12pt; line-height: 102%;">&nbsp;<i>&nbsp;&nbsp;</i></span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ជាដំបូង</span> While Loop <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">បានតួ្រតពិនិត្យមើល</span>
+Expression <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">បើសិនវាពិតនោះ</span>
+Statement <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">របស់</span>
+While Loop <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">តូ្រវបានអនុវត្តន៏
+</span>(Execute) <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">រួចវាក៏ទៅពិនិត្យមើល</span> Expression <span lang="KHM" style="mso-bidi-font-size:
+11.0pt;line-height:102%">ម្តងទៀត</span><span lang="KHM" style="font-size:18.0pt;
+mso-ansi-font-size:11.0pt;line-height:102%"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">បើសិនជាវានៅតែពិត</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">នោះ</span> Statement <span lang="KHM" style="mso-bidi-font-size:11.0pt;
+line-height:102%">ឬ</span><span lang="KHM"> </span>Block Statement <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">របស់វានៅតែ</span>
+Execute <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ដដែរ</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">រហូតដល់</span> Expression <span lang="KHM" style="mso-bidi-font-size:11.0pt;
+line-height:102%">មិនពិត</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">។</span><span lang="KHM"> </span><o:p></o:p></font></p><p class="MsoNormal" style="margin-top:0cm;margin-right:8.15pt;margin-bottom:
+3.55pt;margin-left:0cm;text-indent:-.75pt"><font face="Times New Roman"><span lang="KHM" style="font-size: 12pt; line-height: 102%;">៤</span><span style="font-size: 12pt; line-height: 102%;">.</span><span lang="KHM" style="font-size: 12pt; line-height: 102%;">២</span><span style="font-size: 12pt; line-height: 102%;"> .<i>Do-While-
+Loop Statement </i>&nbsp;<i>&nbsp;&nbsp;</i></span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ជាចំបូង</span> do While Loop
+<span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">បាន</span>
+Execute <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">មួយ</span>
+Statement <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ដែលនៅក្នុង</span>
+Loop <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">សិនមុននឹងវាតួ្រតពិនិត្យមើល</span>
+Expression <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">។</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">ពេលវាតួ្រតពិនិត្យឃើញថា</span> Expression <span lang="KHM" style="mso-bidi-font-size:
+11.0pt;line-height:102%">នៅតែពិត</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">នោះ</span> Statement <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">តូ្រវបាន</span>
+Execute <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ម្ដងទៀតជាបន្តបនា្ទប់</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">រហូតដល់វាពិនិត្យឃើញថា</span> Expression <span lang="KHM" style="mso-bidi-font-size:
+11.0pt;line-height:102%">លែងពិត</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">។</span>&nbsp;&nbsp; <o:p></o:p></font></p><p class="MsoNormal" style="margin-top:0cm;margin-right:.6pt;margin-bottom:.3pt;
+margin-left:-.25pt"><font face="Times New Roman"><b><i><span style="font-size: 12pt; line-height: 102%;">For Loop Statement</span></i></b><i><span style="font-size: 12pt; line-height: 102%;"> </span></i><span style="font-size: 12pt; line-height: 102%;">&nbsp;<i>&nbsp;&nbsp;</i></span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ទំរង</span> For loop <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">មានបីកន្សោម</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">។</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:
+11.0pt;line-height:102%">កន្សោមទីមួយតូ្រវបានប្រើសំរាប់កំណត់តម្លៃ</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">ដំបូង</span>&nbsp; <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">កន្សោមទី</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">២</span><span lang="KHM" style="font-size:18.0pt;mso-ansi-font-size:11.0pt;
+line-height:102%"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;
+line-height:102%">ប្រើសំរាប់</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ផ្ទៀងផ្ទាត់ថាតើ</span> Loop <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">និងតូ្រវបានបន្តម្ដងទៀត</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">ឬ</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:
+11.0pt;line-height:102%">ទេ</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ហើយកន្សោមទី</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">៣</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:
+11.0pt;line-height:102%">សំរាប់ប្តរតម្លៃដើម្បី</span><span lang="KHM"> </span>Execute
+<span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">។</span><span lang="KHM"> </span><o:p></o:p></font></p><p class="MsoNormal" style="margin-top:0cm;margin-right:.6pt;margin-bottom:.3pt;
+margin-left:-.25pt"><font face="Times New Roman">&nbsp;<span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ទំរងរបស់</span> For Loop : <o:p></o:p></font></p><p class="MsoNormal" style="margin-top:0cm;margin-right:.6pt;margin-bottom:.3pt;
+margin-left:-.25pt"><font face="Times New Roman"><b><i><span style="font-size: 12pt; line-height: 102%;">Goto Statement</span></i></b><i><span style="font-size: 12pt; line-height: 102%;"> </span></i><span style="font-size: 12pt; line-height: 102%;">&nbsp;<i>&nbsp;&nbsp;</i></span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ប្រើសំរាប់ចាក់ចេញ</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">បញ្ចួល</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:
+11.0pt;line-height:102%">បង្វែលតួ្រតពិនិត្យ</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ទៅលើ</span>
+Statement <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ណាមួយយ៉ាងឆាប់រហ័យ</span><span lang="KHM"> </span><span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:
+102%">។</span>&nbsp; <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ទំរងទូទៅនៃ</span> Goto label
+<o:p></o:p></font></p><p class="MsoNormal">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-top:0cm;margin-right:.6pt;margin-bottom:.3pt;
+margin-left:-.25pt"><font face="Times New Roman">identifier <span lang="KHM" style="mso-bidi-font-size:11.0pt;
+line-height:102%">គឹជាឈ្មោះសំកាល់ទីតំាងសំរាប់</span> Goto statement <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ទៅ </span>Execute <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">នូវ</span>
+Statement <span lang="KHM" style="mso-bidi-font-size:11.0pt;line-height:102%">ដែលនៅបន្ទាប់នឹងវា។</span></font><span lang="KHM"> </span><o:p></o:p></p>
+<!-- /wp:paragraph --></p>
+            
+
+            
+
+
+        </div>
+        <!--mainlist-->
+
+
+    </div>
+    <!--container-->
+
+
+
+</div>
+<!--main-contianer-->
+<style type="text/css">
+    .mainfooter {
+    display: none !important;
+}
+</style>
+
+          
+
+     <div class="mainfooter">
+       <div class="wrapper">
+           <div class="footer">
+               <div class="footer-top">
+                   <a href="#" class="scrollup" style="display: none;">Go Top</a>
+                   <div class="container">
+                       <div class="footer-main-menu quick-link">
+                           <div class="sub-title">
+                               <h4>Quick Link</h4>
+                           </div>
+                           <div class="menu-quick-link-menu-container">
+                               <div class="menu-quick-link-container">
+                                   <ul id="menu-quick-link" class="menu">
+                                       <li>
+                                           <a href="../about.html">About Us</a></li>
+                                       <li>
+                                           <a href="../contact.html">Contact Us</a>
+                                       </li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div> <!-- // quick-link -->
+                       <div class="footer-main-menu contact-us">
+                           <div class="sub-title">
+                               <h4>Contact Us</h4>
+                           </div>
+                           <ul>
+                               <li class="address">We are working development at Phnom Penh, Cambodia.</li>
+                               
+                           </ul>
+                       </div> <!-- // contact-us -->
+                       <div class="footer-main-menu follow-us">
+                           <div class="sub-title">
+                               <h4>Follow us</h4>
+                           </div>
+                           <ul class="follow_us">
+                               <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.facebook.com/ចៅ-បាយក្តាំង-214353082064202/"><img
+                                           src="../assets/images/fb.png" alt="Fb"></a></li>                             
+                               <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.youtube.com/channel/UCag1QcFe-E22cxbddOl7iiw/playlists"><img
+                                           src="../assets/images/youtube.png" alt="YouTube"></a></li>
+                           </ul>
+
+                       </div> <!-- // information -->
+                   </div> <!-- // container -->
+               </div> <!-- // footer-top -->
+
+               <div class="footer-bottom">
+                   <div class="container-footer">
+                       <div class="copyright">Copyright © 2019 brocodings.com All Rights Reserved.</div>
+                       <div class="developedby">
+                           Developed by:
+                           <a href="../index.html" target="_blank" style="color:#ffffff;">
+                               brocodings.com
+                           </a>
+                       </div>
+                   </div> <!-- // container -->
+               </div> <!-- // footer-bottom -->
+
+           </div> <!-- // footer -->
+       </div> <!-- // wrapper -->
+       <script type="text/javascript" src="../assets/js/jquery.min.js"></script>       
+       <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+       <script type="text/javascript" src="../../cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+       <script type="text/javascript" src="../../cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+       
+       <script type="text/javascript">
+       $(document).ready(function() {
+           //data table
+           $('#datalesson').DataTable({
+            "pageLength": 50
+           });
+
+
+       });
+
+       </script>
+
+       </body>
+
+       
+<!-- Mirrored from www.brocodings.com/post/c?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a4%20%e1%9f%96%20Loop%20Control%20Structure by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Aug 2020 08:17:07 GMT -->
+</html>    

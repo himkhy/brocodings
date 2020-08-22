@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<!-- Mirrored from www.brocodings.com/post/mssql?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a2%20%e1%9f%96%20Using%20Full%20Text%20in%20SQL%20Server by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Aug 2020 08:18:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="Keywords"
+        content="HTML,CSS,JavaScript,MYSQL,MSSQL,PHP,jQuery,JSON,DOM,Bootstrap,C,C++,C#,Analysis System,Java,Web development,tutorials,programming,training,learning,lessons,examples,exercises,source code,colors,demos" />
+    <meta name="description" content="brocodings.com | មេរៀនទី២២ ៖ Using Full Text in SQL Server" />
+    <title>brocodings.com | មេរៀនទី២២ ៖ Using Full Text in SQL Server</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="../assets/css/bro-style.css" />
+    <link rel="stylesheet" href="../assets/css/customiz.html" />
+    <link rel="stylesheet" href="../assets/css/jquery.colorbox-min.html" />
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.html" />
+    <link rel="stylesheet" href="../assets/css/slick.min.html" />
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+       
+            <div class="container-fluid">
+                <nav class="navbar  fixed-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">BROCODINGS.COM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+           
+        </ul>
+        <ul class="navbar-nav">
+             <li class="nav-item"><a class="nav-link" href="../searchfilter.html"><i class="fa fa-search"
+                                            aria-hidden="true"></i></a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Video
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="../products/2.html">វីដេអូ CMS</a>
+                                                                                    </div>
+                                    </li>
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Libraries
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="json.html">json</a>
+                                                                                        <a class="dropdown-item"
+                                                href="flutter.html">flutter</a>
+                                                                                        <a class="dropdown-item"
+                                                href="Laravel.html">Laravel</a>
+                                                                                        <a class="dropdown-item"
+                                                href="computer.html">កុំព្យូទ័រ</a>
+                                                                                        <a class="dropdown-item"
+                                                href="wordPress.html">WordPress</a>
+                                                                                        <a class="dropdown-item"
+                                                href="mssql.html">MsSQL</a>
+                                                                                        <a class="dropdown-item"
+                                                href="css.html">css</a>
+                                                                                        <a class="dropdown-item"
+                                                href="html.html">html</a>
+                                                                                        <a class="dropdown-item"
+                                                href="dart.html">dart</a>
+                                                                                        <a class="dropdown-item"
+                                                href="crudbooster.html">crudbooster</a>
+                                                                                        <a class="dropdown-item"
+                                                href="kwdesign.html">colors design</a>
+                                                                                        <a class="dropdown-item"
+                                                href="c.html">c</a>
+                                                                                        <a class="dropdown-item"
+                                                href="mysql.html">mysql</a>
+                                                                                        <a class="dropdown-item"
+                                                href="powerpoint.html">powerpoint</a>
+                                                                                        <a class="dropdown-item"
+                                                href="photoshop.html">Photoshop</a>
+                                                                                        <a class="dropdown-item"
+                                                href="illustrator.html">Illustrator</a>
+                                                                                    </div>
+
+
+                                    </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Press Release
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="../press/4.html">project</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/3.html">book</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/2.html">Software</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/1.html">Template Web Design</a>
+                                                                                    </div>
+                                    </li>
+                                       
+                                    <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
+                                    <li class="nav-item"><a  class="nav-link" href="../contact.html">Contact Us</a></li>
+  
+        </ul>
+    </div>
+</nav>
+
+                      
+        </div><!-- container-fluid navibar-->
+    </div> <!-- // wrapper -->    
+                
+
+<div class="main-contianer">
+    <div class="container-lesson">
+        <div class="main-left position-fixed " id="sticky-sidebar">
+            <div class="list-title">
+                <div id="mylistLinks">
+
+                    <ul>
+                                                <li>
+                            <a href="mssqlea4a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%20%e1%9f%96%20Variable%20Declaration">មេរៀនទី១ ៖ Variable Declaratio...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlf1b7.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%20%e1%9f%96Operator%20%e1%9e%93%e1%9f%85%e1%9e%80%e1%9f%92%e1%9e%93%e1%9e%bb%e1%9e%84%20SQL%20Server">មេរៀនទី២ ៖Operator នៅក្នុង SQL...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql2684.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%20%e1%9f%96Control%20Structure">មេរៀនទី៣ ៖Control Structure
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlde09.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a4%20%e1%9f%96%e2%80%8b%20Try%20%e2%80%a6%20Catch">មេរៀនទី៤ ៖​ Try … Catch
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql0021.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a5%20%e1%9f%96%20Wait%20For">មេរៀនទី៥ ៖ Wait For
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlfd9c.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a6%20%e1%9f%96%20Sequence">មេរៀនទី៦ ៖ Sequence
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql8758.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a7%20%e1%9f%96%20OFFSET%20%e1%9e%93%e1%9e%b7%e1%9e%84%20FETCH">មេរៀនទី៧ ៖ OFFSET និង FETCH
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlb045.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a8%20%e1%9f%96%20ROW_NUMBER()">មេរៀនទី៨ ៖ ROW_NUMBER()
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqldcb4.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a9%20%e1%9f%96%20Stored%20Procedure">មេរៀនទី៩ ៖ Stored Procedure
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql7e43.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a0%20%e1%9f%96%20%e1%9e%94%e1%9e%84%e1%9f%92%e1%9e%80%e1%9e%be%e1%9e%8f%20Stored%20Procedure">មេរៀនទី១០ ៖ បង្កើត Stored Proc...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql7659.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a1%20%e1%9f%96Parameter%20%e1%9e%93%e1%9f%85%e1%9e%80%e1%9f%92%e1%9e%93%e1%9e%bb%e1%9e%84%20Stored%20Procedure">មេរៀនទី១១ ៖Parameter នៅក្នុង S...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql321d.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a2%20%e1%9f%96User%20Define%20Function">មេរៀនទី១២ ៖User Define Functio...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqld734.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a3%20%e1%9f%96%20Built-in%20Function%20in%20SQL%20Server">មេរៀនទី១៣ ៖ Built-in Function...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql67bb.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a4%20%e1%9f%96%20Limitations%20and%20Restrictions">មេរៀនទី១៤ ៖ Limitations and Re...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql45f5.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a5%20%e1%9f%96%20SP%20vs%20UDF">មេរៀនទី១៥ ៖ SP vs UDF
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql246c.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a6%20%e1%9f%96%20Creating%20and%20Using%20View">មេរៀនទី១៦ ៖ Creating and Using...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql204a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a7%20%e1%9f%96%20Create%20Partition%20Table">មេរៀនទី១៧ ៖ Create Partition T...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlae7c.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a8%20%e1%9f%96What%20is%20Full%20Text?">មេរៀនទី១៨ ៖What is Full Text?
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlf298.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%e1%9f%a9%20%e1%9f%96%20Overview%20of%20the%20Full-Text%20Predicates">មេរៀនទី១៩ ៖ Overview of the Fu...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlca1f.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a0%20%e1%9f%96%20Creating%20Full%20Text%20in%20SQL%20Server">មេរៀនទី២០ ៖ Creating Full Text...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqleb0a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a1%20%e1%9f%96%20Overview%20of%20the%20Full-Text%20Predicates">មេរៀនទី២១ ៖ Overview of the Fu...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql99ac.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a2%20%e1%9f%96%20Using%20Full%20Text%20in%20SQL%20Server">មេរៀនទី២២ ៖ Using Full Text in...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql4b53.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a3%20%e1%9f%96%20Using%20Thesaurus%20Files%20for%20Full%20Text%20in%20SQL%20Server">មេរៀនទី២៣ ៖ Using Thesaurus Fi...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql0dfa.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a4%20%e1%9f%96%20Introduction%20to%20Transaction">មេរៀនទី២៤ ៖ Introduction to Tr...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqldba5.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a5%20%e1%9f%96%20Auto%20Commit%20Transaction">មេរៀនទី២៥ ៖ Auto Commit Transa...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql8b9c.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a6%20%e1%9f%96%20Type%20of%20Transactions">មេរៀនទី២៦ ៖ Type of Transactio...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql0000.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a7%20%e1%9f%96%20Nested%20and%20Saving%20Transaction">មេរៀនទី២៧ ៖ Nested and Saving...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql0e05.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a9%20%e1%9f%96%20Introduction%20to%20Trigger">មេរៀនទី២៩ ៖ Introduction to Tr...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqlde18.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a0%20%e1%9f%96%20(Data%20Manipulation%20Languages)DML%20Trigger">មេរៀនទី៣០ ៖ (Data Manipulation...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqld758.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a1%20%e1%9f%96%20What%20is%20Backup%20database?">មេរៀនទី៣១ ៖ What is Backup dat...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql3e5b.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a2%20%e1%9f%96%20%e1%9e%80%e1%9e%b6%e1%9e%9a%20Copy%20File%20Database">មេរៀនទី៣២ ៖ ការ Copy File Data...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql3b5a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a2%20%e1%9f%96%20%e1%9e%80%e1%9e%b6%e1%9e%9a%20Generate%20Script%20(.sql)">មេរៀនទី៣២ ៖ ការ Generate Scrip...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssqleec9.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a3%20%e1%9f%96%20%e1%9e%80%e1%9e%b6%e1%9e%9a%20Backup%20%e1%9e%87%e1%9e%b6%20File%20(.bak)">មេរៀនទី៣៣ ៖ ការ Backup ជា File...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql797a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a4%20%e1%9f%96%20%e1%9e%80%e1%9e%b6%e1%9e%9a%20Restore%20Database%20%e1%9e%87%e1%9e%b6%20File%20(.bak)">មេរៀនទី៣៤ ៖ ការ Restore Databa...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mssql136f.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%e1%9f%a5%20%e1%9f%96%20%e1%9e%80%e1%9e%b6%e1%9e%9a%e1%9e%94%e1%9e%84%e1%9f%92%e1%9e%80%e1%9e%be%e1%9e%8f%20Job%20%e1%9e%93%e1%9f%85%e1%9e%80%e1%9f%92%e1%9e%93%e1%9e%bb%e1%9e%84%20SQL%20Server">មេរៀនទី៣៥ ៖ ការបង្កើត Job នៅក្...
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="mysFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+        <!--main-left-->
+        <div class="mainlist">
+
+            
+            
+                        <h3> មេរៀនទី២២ ៖ Using Full Text in SQL Server</h3>
+            <p> <p style="language:en-US;line-height:200%;margin-top:12.0pt;margin-bottom:0pt;
+margin-left:0in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">After
+we create Full-Text index in the table already we can write query to get data.</span></p><p style="language:en-US;line-height:200%;margin-top:12.0pt;margin-bottom:0pt;
+margin-left:0in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; The </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">query
+uses the CONTAINS predicate to search for descriptions in which the description
+ID is not equal to 5 and the description contains both the word
+"Aluminum" and the word "spindle." The search condition
+uses the AND Boolean operator</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">.</span></p><p style="language:en-US;line-height:200%;margin-top:12.0pt;margin-bottom:0pt;
+margin-left:0in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Ex1:&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; SELECT Description</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; FROM </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Production.ProductDescription</span></p><p>
+
+
+
+
+
+
+
+</p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; WHERE </span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:red;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+red;mso-style-textfill-fill-alpha:100.0%">CONTAINS</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(Description</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">,
+'aluminum </span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast;
+color:red;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:solid;
+mso-style-textfill-fill-color:red;mso-style-textfill-fill-alpha:100.0%">AND</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">spindle</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">')</span></p><p style="language:en-US;line-height:200%;margin-top:10.0pt;margin-bottom:0pt;
+margin-left:0in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; You </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">can
+use&nbsp;</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">CONTAINS</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;to
+search for words or phrases with a specified prefix. All entries in the column
+that contain text beginning with the specified prefix are returned. For
+example, to search for all rows that contain the prefix&nbsp;top-, as
+in&nbsp;topple,&nbsp;topping, and&nbsp;top. The query looks like this:</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Ex2:</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; SELECT </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Description,
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">ProductDescriptionID</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; FROM </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Production.ProductDescription</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+
+
+
+
+
+
+
+<p style="language:en-US;line-height:200%;margin-top:12.0pt;margin-bottom:0pt;
+margin-left:0in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"></p></p><p style="language:en-US;line-height:200%;margin-top:10.0pt;margin-bottom:0pt;
+margin-left:0in;text-indent:0in;text-align:left;direction:ltr;unicode-bidi:
+embed;mso-line-break-override:none;word-break:normal;punctuation-wrap:hanging"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:black;mso-color-index:1;mso-font-kerning:
+12.0pt;language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:
+text1;mso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%"><span style="mso-tab-count:2">&nbsp;&nbsp;</span>WHERE </span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:red;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+red;mso-style-textfill-fill-alpha:100.0%">CONTAINS</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:black;mso-color-index:1;mso-font-kerning:
+12.0pt;language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:
+text1;mso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%">
+(Description, '</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast;
+color:red;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:solid;
+mso-style-textfill-fill-color:red;mso-style-textfill-fill-alpha:100.0%">"top*"</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:black;mso-color-index:1;mso-font-kerning:
+12.0pt;language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:
+text1;mso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%">'
+)</span></p><p style="language:en-US;line-height:200%;margin-top:10.0pt;margin-bottom:0pt;
+margin-left:0in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; You </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">can
+use&nbsp;</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"><a href="http://technet.microsoft.com/en-us/library/ms187787.aspx">CONTAINS</a></span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">,&nbsp;</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">or</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"><a href="http://technet.microsoft.com/en-us/library/ms176078.aspx">FREETEXT</a></span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;to
+search for all the different tenses and conjugations of a verb or both the
+singular and plural forms of a noun (an inflectional search) or for synonymous
+forms of a specific word (a thesaurus search).</span></p><p style="language:en-US;line-height:200%;margin-top:10.0pt;margin-bottom:0pt;
+margin-left:0in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; The </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">following
+example searches for any form of "foot" ("foot",
+"feet", and so on) in the&nbsp;Comments&nbsp;column of the&nbsp;</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">ProductReview</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp;table
+in the&nbsp;</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">AdventureWorks</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+database.</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Ex:
+&nbsp; SELECT </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Comments,
+</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">ReviewerName</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; FROM </span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">Production.ProductReview</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">&nbsp; WHERE </span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:red;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+red;mso-style-textfill-fill-alpha:100.0%">CONTAINS</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+(Comments, '</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast;
+color:red;mso-font-kerning:12.0pt;language:en-US;mso-style-textfill-type:solid;
+mso-style-textfill-fill-color:red;mso-style-textfill-fill-alpha:100.0%">FORMSOF</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">(</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:red;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+red;mso-style-textfill-fill-alpha:100.0%">INFLECTIONAL</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">,
+"foot</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">")')</span></p><p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+
+
+
+
+
+
+
+
+
+
+
+<p style="line-height: 200%; margin-top: 10pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;"></p>
+
+<p style="language:en-US;line-height:200%;margin-top:10.0pt;margin-bottom:0pt;
+margin-left:0in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"></p>
+
+<p style="language:en-US;line-height:200%;margin-top:10.0pt;margin-bottom:0pt;
+margin-left:0in;text-indent:0in;text-align:justify;text-justify:inter-ideograph;
+direction:ltr;unicode-bidi:embed;mso-line-break-override:none;word-break:normal;
+punctuation-wrap:hanging"></p></p><p style="language:en-US;line-height:200%;margin-top:10.0pt;margin-bottom:0pt;
+margin-left:0in;text-indent:0in;text-align:left;direction:ltr;unicode-bidi:
+embed;mso-line-break-override:none;word-break:normal;punctuation-wrap:hanging"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:black;mso-color-index:1;mso-font-kerning:
+12.0pt;language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:
+text1;mso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%"><span style="mso-tab-count:1">&nbsp;&nbsp;</span></span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:black;mso-color-index:1;mso-font-kerning:
+12.0pt;language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:
+text1;mso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%">WHERE
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:red;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+red;mso-style-textfill-fill-alpha:100.0%">CONTAINS</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:black;mso-color-index:1;mso-font-kerning:
+12.0pt;language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:
+text1;mso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%">
+(Comments, </span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast;
+color:black;mso-color-index:1;mso-font-kerning:12.0pt;language:en-US;
+mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:text1;
+mso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%">'</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:red;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+red;mso-style-textfill-fill-alpha:100.0%">FORMSOF</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:black;mso-color-index:1;mso-font-kerning:
+12.0pt;language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:
+text1;mso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%">(</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:red;mso-font-kerning:12.0pt;
+language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-color:
+red;mso-style-textfill-fill-alpha:100.0%">THESAURUS</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:black;mso-color-index:1;mso-font-kerning:
+12.0pt;language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:
+text1;mso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%">,
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:+mn-ea;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;color:black;mso-color-index:1;mso-font-kerning:
+12.0pt;language:en-US;mso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:
+text1;mso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%">"foot")')</span></p></p>
+            
+
+            
+
+
+        </div>
+        <!--mainlist-->
+
+
+    </div>
+    <!--container-->
+
+
+
+</div>
+<!--main-contianer-->
+<style type="text/css">
+    .mainfooter {
+    display: none !important;
+}
+</style>
+
+          
+
+     <div class="mainfooter">
+       <div class="wrapper">
+           <div class="footer">
+               <div class="footer-top">
+                   <a href="#" class="scrollup" style="display: none;">Go Top</a>
+                   <div class="container">
+                       <div class="footer-main-menu quick-link">
+                           <div class="sub-title">
+                               <h4>Quick Link</h4>
+                           </div>
+                           <div class="menu-quick-link-menu-container">
+                               <div class="menu-quick-link-container">
+                                   <ul id="menu-quick-link" class="menu">
+                                       <li>
+                                           <a href="../about.html">About Us</a></li>
+                                       <li>
+                                           <a href="../contact.html">Contact Us</a>
+                                       </li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div> <!-- // quick-link -->
+                       <div class="footer-main-menu contact-us">
+                           <div class="sub-title">
+                               <h4>Contact Us</h4>
+                           </div>
+                           <ul>
+                               <li class="address">We are working development at Phnom Penh, Cambodia.</li>
+                               
+                           </ul>
+                       </div> <!-- // contact-us -->
+                       <div class="footer-main-menu follow-us">
+                           <div class="sub-title">
+                               <h4>Follow us</h4>
+                           </div>
+                           <ul class="follow_us">
+                               <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.facebook.com/ចៅ-បាយក្តាំង-214353082064202/"><img
+                                           src="../assets/images/fb.png" alt="Fb"></a></li>                             
+                               <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.youtube.com/channel/UCag1QcFe-E22cxbddOl7iiw/playlists"><img
+                                           src="../assets/images/youtube.png" alt="YouTube"></a></li>
+                           </ul>
+
+                       </div> <!-- // information -->
+                   </div> <!-- // container -->
+               </div> <!-- // footer-top -->
+
+               <div class="footer-bottom">
+                   <div class="container-footer">
+                       <div class="copyright">Copyright © 2019 brocodings.com All Rights Reserved.</div>
+                       <div class="developedby">
+                           Developed by:
+                           <a href="../index.html" target="_blank" style="color:#ffffff;">
+                               brocodings.com
+                           </a>
+                       </div>
+                   </div> <!-- // container -->
+               </div> <!-- // footer-bottom -->
+
+           </div> <!-- // footer -->
+       </div> <!-- // wrapper -->
+       <script type="text/javascript" src="../assets/js/jquery.min.js"></script>       
+       <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+       <script type="text/javascript" src="../../cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+       <script type="text/javascript" src="../../cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+       
+       <script type="text/javascript">
+       $(document).ready(function() {
+           //data table
+           $('#datalesson').DataTable({
+            "pageLength": 50
+           });
+
+
+       });
+
+       </script>
+
+       </body>
+
+       
+<!-- Mirrored from www.brocodings.com/post/mssql?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%e1%9f%a2%20%e1%9f%96%20Using%20Full%20Text%20in%20SQL%20Server by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Aug 2020 08:18:29 GMT -->
+</html>    

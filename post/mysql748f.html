@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<!-- Mirrored from www.brocodings.com/post/mysql?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%e1%9f%a3%20%e1%9f%96%20UNION by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Aug 2020 08:19:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="Keywords"
+        content="HTML,CSS,JavaScript,MYSQL,MSSQL,PHP,jQuery,JSON,DOM,Bootstrap,C,C++,C#,Analysis System,Java,Web development,tutorials,programming,training,learning,lessons,examples,exercises,source code,colors,demos" />
+    <meta name="description" content="brocodings.com | មេរៀនទី ៣៣ ៖ UNION" />
+    <title>brocodings.com | មេរៀនទី ៣៣ ៖ UNION</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="../assets/css/bro-style.css" />
+    <link rel="stylesheet" href="../assets/css/customiz.html" />
+    <link rel="stylesheet" href="../assets/css/jquery.colorbox-min.html" />
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.html" />
+    <link rel="stylesheet" href="../assets/css/slick.min.html" />
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+       
+            <div class="container-fluid">
+                <nav class="navbar  fixed-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">BROCODINGS.COM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+           
+        </ul>
+        <ul class="navbar-nav">
+             <li class="nav-item"><a class="nav-link" href="../searchfilter.html"><i class="fa fa-search"
+                                            aria-hidden="true"></i></a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Video
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="../products/2.html">វីដេអូ CMS</a>
+                                                                                    </div>
+                                    </li>
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Libraries
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="json.html">json</a>
+                                                                                        <a class="dropdown-item"
+                                                href="flutter.html">flutter</a>
+                                                                                        <a class="dropdown-item"
+                                                href="Laravel.html">Laravel</a>
+                                                                                        <a class="dropdown-item"
+                                                href="computer.html">កុំព្យូទ័រ</a>
+                                                                                        <a class="dropdown-item"
+                                                href="wordPress.html">WordPress</a>
+                                                                                        <a class="dropdown-item"
+                                                href="mssql.html">MsSQL</a>
+                                                                                        <a class="dropdown-item"
+                                                href="css.html">css</a>
+                                                                                        <a class="dropdown-item"
+                                                href="html.html">html</a>
+                                                                                        <a class="dropdown-item"
+                                                href="dart.html">dart</a>
+                                                                                        <a class="dropdown-item"
+                                                href="crudbooster.html">crudbooster</a>
+                                                                                        <a class="dropdown-item"
+                                                href="kwdesign.html">colors design</a>
+                                                                                        <a class="dropdown-item"
+                                                href="c.html">c</a>
+                                                                                        <a class="dropdown-item"
+                                                href="mysql.html">mysql</a>
+                                                                                        <a class="dropdown-item"
+                                                href="powerpoint.html">powerpoint</a>
+                                                                                        <a class="dropdown-item"
+                                                href="photoshop.html">Photoshop</a>
+                                                                                        <a class="dropdown-item"
+                                                href="illustrator.html">Illustrator</a>
+                                                                                    </div>
+
+
+                                    </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Press Release
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                        <a class="dropdown-item"
+                                                href="../press/4.html">project</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/3.html">book</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/2.html">Software</a>
+                                                                                        <a class="dropdown-item"
+                                                href="../press/1.html">Template Web Design</a>
+                                                                                    </div>
+                                    </li>
+                                       
+                                    <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
+                                    <li class="nav-item"><a  class="nav-link" href="../contact.html">Contact Us</a></li>
+  
+        </ul>
+    </div>
+</nav>
+
+                      
+        </div><!-- container-fluid navibar-->
+    </div> <!-- // wrapper -->    
+                
+
+<div class="main-contianer">
+    <div class="container-lesson">
+        <div class="main-left position-fixed " id="sticky-sidebar">
+            <div class="list-title">
+                <div id="mylistLinks">
+
+                    <ul>
+                                                <li>
+                            <a href="mysql8636.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a1%20%e1%9f%96%20%20MySQL">មេរៀនទី១ ៖  MySQL
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql9ac1.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a2%20%e1%9f%96%20%e2%80%8b%20%e1%9e%94%e1%9f%92%e1%9e%9a%e1%9e%97%e1%9f%81%e1%9e%91%e1%9e%91%e1%9e%b7%e1%9e%93%e1%9f%92%e1%9e%93%e1%9e%93%e1%9f%90%e1%9e%99">មេរៀនទី២ ៖ ​ ប្រភេទទិន្នន័យ
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql2392.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a3%20%e1%9f%96%20%e2%80%8b%20%e1%9e%9a%e1%9e%94%e1%9f%80%e1%9e%94%e1%9e%94%e1%9e%84%e1%9f%92%e1%9e%80%e1%9e%be%e1%9e%8f,%20%e1%9e%9b%e1%9e%bb%e1%9e%94,%20%e1%9e%94%e1%9e%84%e1%9f%92%e1%9e%a0%e1%9e%b6%e1%9e%89%20%e1%9e%93%e1%9e%b7%e1%9e%84%20%e1%9e%94%e1%9f%92%e1%9e%9a%e1%9e%be%20Database">មេរៀនទី៣ ៖ ​ របៀបបង្កើត, លុប,...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql2791.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a4%20%e1%9f%96%20%20%e1%9e%9a%e1%9e%94%e1%9f%80%e1%9e%94%e1%9e%94%e1%9e%84%e1%9f%92%e1%9e%80%e1%9e%be%e1%9e%8f,%e1%9e%9b%e1%9e%bb%e1%9e%94%20%e1%9e%93%e1%9e%b7%e1%9e%84%20%e1%9e%98%e1%9e%be%e1%9e%9b%e1%9e%96%e1%9f%90%e1%9e%8f%e1%9f%8c%e1%9e%98%e1%9e%b6%e1%9e%93%20Table">មេរៀនទី៤ ៖  របៀបបង្កើត,លុប និង...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlee13.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a5%20%e1%9f%96%20Attribute%20%e1%9e%9a%e1%9e%94%e1%9e%9f%e1%9f%8b%20Column">មេរៀនទី៥ ៖ Attribute របស់ Colu...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql2006.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a6%20%e1%9f%96%20%e1%9e%80%e1%9e%b6%e1%9e%9a%e1%9e%92%e1%9f%92%e1%9e%9c%e1%9e%be%e1%9e%80%e1%9e%b6%e1%9e%9a%e1%9e%80%e1%9f%82%e1%9e%94%e1%9f%92%e1%9e%9a%e1%9f%82%20Table">មេរៀនទី៦ ៖ ការធ្វើការកែប្រែ Ta...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqla43a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a7%20%e1%9f%96%20%e1%9e%9a%e1%9e%94%e1%9f%80%e1%9e%94%e2%80%8b%e1%9e%94%e1%9e%89%e1%9f%92%e1%9e%85%e1%9e%bc%e1%9e%9b%e2%80%8b%e1%9e%91%e1%9e%b7%e1%9e%93%e1%9f%92%e1%9e%93%e1%9e%93%e1%9f%90%e1%9e%99%20(Insert)">មេរៀនទី៧ ៖ របៀប​បញ្ចូល​ទិន្នន័...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlcfde.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a8%20%e1%9f%96%20%20%e1%9e%9a%e1%9e%94%e1%9f%80%e1%9e%94%e1%9e%80%e1%9f%82%e1%9e%94%e1%9f%92%e1%9e%9a%e1%9f%82%e1%9e%91%e1%9e%b7%e1%9e%93%e1%9f%92%e1%9e%93%e1%9e%93%e1%9f%90%e1%9e%99%20%e1%9e%93%e1%9f%85%e1%9e%80%e1%9f%92%e1%9e%93%e1%9e%bb%e1%9e%84%20Table%20(Update)">មេរៀនទី៨ ៖  របៀបកែប្រែទិន្នន័យ...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqle57e.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e1%9f%a9%20%e1%9f%96%20%20%e1%9e%9a%e1%9e%94%e1%9f%80%e1%9e%94%e2%80%8b%e1%9e%9b%e1%9e%bb%e1%9e%94%e2%80%8b%e1%9e%91%e1%9e%b7%e1%9e%93%e1%9f%92%e1%9e%93%e1%9e%93%e1%9f%90%e1%9e%99%e2%80%8b%e1%9e%85%e1%9f%81%e1%9e%89%e2%80%8b%e1%9e%96%e1%9e%b8%20Table%20(Delete)">មេរៀនទី៩ ៖  របៀប​លុប​ទិន្នន័យ​...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql1a14.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a1%e1%9f%a0%20%e1%9f%96%20ORDER%20BY">មេរៀនទី ១០ ៖ ORDER BY
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql0d12.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e2%80%8b%20%e1%9f%a1%e1%9f%a1%20%e1%9f%96%20WHERE">មេរៀនទី​ ១១ ៖ WHERE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqla582.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e2%80%8b%20%e1%9f%a1%e1%9f%a2%20%e1%9f%96%20SELECT%20DISTINCT">មេរៀនទី​ ១២ ៖ SELECT DISTINCT
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql97fb.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a1%e1%9f%a3%20%e1%9f%96%20AND">មេរៀនទី ១៣ ៖ AND
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqle43f.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a1%e1%9f%a4%20%e1%9f%96%20OR">មេរៀនទី ១៤ ៖ OR
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql47b2.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a1%e1%9f%a5%20%e1%9f%96%20IN">មេរៀនទី ១៥ ៖ IN
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql72e2.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a1%e1%9f%a6%20%e1%9f%96%20BETWEEN">មេរៀនទី ១៦ ៖ BETWEEN
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql382d.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a1%e1%9f%a7%20%e1%9f%96%20LIKE">មេរៀនទី ១៧ ៖ LIKE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql0853.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a1%e1%9f%a8%20%e1%9f%96%20LIMIT">មេរៀនទី ១៨ ៖ LIMIT
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql200e.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a1%e1%9f%a9%20%e1%9f%96%20IS%20NULL">មេរៀនទី ១៩ ៖ IS NULL
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql1b0e.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a2%e1%9f%a0%20%e1%9f%96%20Table%20&amp;%20Column%20Aliases">មេរៀនទី ២០ ៖ Table &amp; Column Al...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqle82b.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a2%e1%9f%a1%20%e1%9f%96%20Joins">មេរៀនទី ២១ ៖ Joins
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql34c1.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a2%e1%9f%a2%20%e1%9f%96%20INNER%20JOIN">មេរៀនទី ២២ ៖ INNER JOIN
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql41a0.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a2%e1%9f%a3%20%e1%9f%96%20LEFT%20JOIN">មេរៀនទី ២៣ ៖ LEFT JOIN
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql14a6.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a2%e1%9f%a4%20%e1%9f%96%20RIGHT%20JOIN">មេរៀនទី ២៤ ៖ RIGHT JOIN
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql945a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e2%80%8b%20%e1%9f%a2%e1%9f%a5%20%e1%9f%96%20Self%20Join">មេរៀនទី​ ២៥ ៖ Self Join
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql5efd.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a2%e1%9f%a6%20%e1%9f%96%20CROSS%20JOIN">មេរៀនទី ២៦ ៖ CROSS JOIN
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql19f0.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a2%e1%9f%a7%20%e1%9f%96%20GROUP%20BY">មេរៀនទី ២៧ ៖ GROUP BY
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqla91e.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e2%80%8b%20%e1%9f%a2%e1%9f%a8%20%e1%9f%96%20HAVING">មេរៀនទី​ ២៨ ៖ HAVING
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql5eb9.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a2%e1%9f%a9%20%e1%9f%96%20ROLLUP">មេរៀនទី ២៩ ៖ ROLLUP
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql8f53.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%e1%9f%a0%20%e1%9f%96%20Subquery">មេរៀនទី ៣០ ៖ Subquery
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql4261.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%e1%9f%a1%20%e1%9f%96%20Derived%20Tables">មេរៀនទី ៣១ ៖ Derived Tables
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql0f34.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%e1%9f%a2%20%e1%9f%96%20EXISTS">មេរៀនទី ៣២ ៖ EXISTS
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql748f.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%e1%9f%a3%20%e1%9f%96%20UNION">មេរៀនទី ៣៣ ៖ UNION
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlbd8f.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%e1%9f%a4%20%e1%9f%96%20MINUS">មេរៀនទី ៣៤ ៖ MINUS
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql26a9.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%e1%9f%a5%20%e1%9f%96%20INTERSECT">មេរៀនទី ៣៥ ៖ INTERSECT
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql498d.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%e1%9f%a6%20%e1%9f%96%20Insert%20Multiple%20Rows">មេរៀនទី ៣៦ ៖ Insert Multiple R...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlc192.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%e1%9f%a7%20%e1%9f%96%20INSERT%20INTO%20SELECT">មេរៀនទី ៣៧ ៖ INSERT INTO SELEC...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlafd3.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%e1%9f%a8%20%e1%9f%96%20Insert%20On%20Duplicate%20Key%20Update">មេរៀនទី ៣៨ ៖ Insert On Duplica...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql4fa9.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%e1%9f%a9%20%e1%9f%96%20INSERT%20IGNORE">មេរៀនទី ៣៩ ៖ INSERT IGNORE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlccc4.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a4%e1%9f%a0%20%e1%9f%96%20UPDATE">មេរៀនទី ៤០ ៖ UPDATE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql16d4.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a4%e1%9f%a1%20%e1%9f%96%20UPDATE%20JOIN">មេរៀនទី ៤១ ៖ UPDATE JOIN
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlff13.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a4%e1%9f%a2%20%e1%9f%96%20DELETE">មេរៀនទី ៤២ ៖ DELETE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql41c9.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e2%80%8b%20%e1%9f%a4%e1%9f%a3%20%e1%9f%96%20DELETE%20JOIN">មេរៀនទី​ ៤៣ ៖ DELETE JOIN
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqla379.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a4%e1%9f%a4%20%e1%9f%96%20ON%20DELETE%20CASCADE">មេរៀនទី ៤៤ ៖ ON DELETE CASCADE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqla23f.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a4%e1%9f%a5%20%e1%9f%96%20REPLACE">មេរៀនទី ៤៥ ៖ REPLACE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqle740.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a4%e1%9f%a6%20%e1%9f%96%20Selecting%20Database">មេរៀនទី ៤៦ ៖ Selecting Databas...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql406c.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a4%e1%9f%a7%20%e1%9f%96%20CREATE%20DATABASE">មេរៀនទី ៤៧ ៖ CREATE DATABASE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlbbbc.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a4%e1%9f%a8%20%e1%9f%96%20DROP%20DATABASE">មេរៀនទី ៤៨ ៖ DROP DATABASE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlccf0.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%e2%80%8b%20%e1%9f%a4%e1%9f%a9%20%e1%9f%96%20Managing%20Databases">មេរៀនទី​ ៤៩ ៖ Managing Databas...
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlbd9f.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a5%e1%9f%a0%20%e1%9f%96%20Storage%20Engines">មេរៀនទី ៥០ ៖ Storage Engines
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqld92e.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a5%e1%9f%a1%20%e1%9f%96%20Data%20Types">មេរៀនទី ៥១ ៖ Data Types
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql303a.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a5%e1%9f%a2%20%e1%9f%96%20CREATE%20TABLE">មេរៀនទី ៥២ ៖ CREATE TABLE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql5596.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a5%e1%9f%a3%20%e1%9f%96%20Primary%20Key">មេរៀនទី ៥៣ ៖ Primary Key
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql4a00.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a5%e1%9f%a4%20%e1%9f%96%20Foreign%20Key">មេរៀនទី ៥៤ ៖ Foreign Key
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlda9e.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a5%e1%9f%a5%20%e1%9f%96%20UNIQUE%20Constraint">មេរៀនទី ៥៥ ៖ UNIQUE Constraint
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql2fde.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a5%e1%9f%a6%20%e1%9f%96%20CHECK%20Constraint">មេរៀនទី ៥៦ ៖ CHECK Constraint
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqla360.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a5%e1%9f%a7%20%e1%9f%96%20NOT%20NULL">មេរៀនទី ៥៧ ៖ NOT NULL
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql695c.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a5%e1%9f%a8%20%e1%9f%96%20Sequence">មេរៀនទី ៥៨ ៖ Sequence
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql8b41.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a5%e1%9f%a9%20%e1%9f%96%20ALTER%20TABLE">មេរៀនទី ៥៩ ៖ ALTER TABLE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlf915.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a6%e1%9f%a0%20%e1%9f%96%20ADD%20COLUMN">មេរៀនទី ៦០ ៖ ADD COLUMN
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqla374.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a6%e1%9f%a1%20%e1%9f%96%20DROP%20COLUMN">មេរៀនទី ៦១ ៖ DROP COLUMN
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql80e0.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a6%e1%9f%a2%20%e1%9f%96%20RENAME%20TABLE">មេរៀនទី ៦២ ៖ RENAME TABLE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysqlef9e.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a6%e1%9f%a3%20%e1%9f%96%20DROP%20TABLE">មេរៀនទី ៦៣ ៖ DROP TABLE
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql0b8d.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a6%e1%9f%a4%20%e1%9f%96%20Temporary%20Tables">មេរៀនទី ៦៤ ៖ Temporary Tables
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="mysql8f30.html?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a6%e1%9f%a5%20%e1%9f%96%20TRUNCATE%20TABLE">មេរៀនទី ៦៥ ៖ TRUNCATE TABLE
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="mysFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+        <!--main-left-->
+        <div class="mainlist">
+
+            
+            
+                        <h3> មេរៀនទី ៣៣ ៖ UNION</h3>
+            <p> <p>មេរៀនទី ៣៣ ៖ UNION<br></p></p>
+            
+
+            
+
+
+        </div>
+        <!--mainlist-->
+
+
+    </div>
+    <!--container-->
+
+
+
+</div>
+<!--main-contianer-->
+<style type="text/css">
+    .mainfooter {
+    display: none !important;
+}
+</style>
+
+          
+
+     <div class="mainfooter">
+       <div class="wrapper">
+           <div class="footer">
+               <div class="footer-top">
+                   <a href="#" class="scrollup" style="display: none;">Go Top</a>
+                   <div class="container">
+                       <div class="footer-main-menu quick-link">
+                           <div class="sub-title">
+                               <h4>Quick Link</h4>
+                           </div>
+                           <div class="menu-quick-link-menu-container">
+                               <div class="menu-quick-link-container">
+                                   <ul id="menu-quick-link" class="menu">
+                                       <li>
+                                           <a href="../about.html">About Us</a></li>
+                                       <li>
+                                           <a href="../contact.html">Contact Us</a>
+                                       </li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div> <!-- // quick-link -->
+                       <div class="footer-main-menu contact-us">
+                           <div class="sub-title">
+                               <h4>Contact Us</h4>
+                           </div>
+                           <ul>
+                               <li class="address">We are working development at Phnom Penh, Cambodia.</li>
+                               
+                           </ul>
+                       </div> <!-- // contact-us -->
+                       <div class="footer-main-menu follow-us">
+                           <div class="sub-title">
+                               <h4>Follow us</h4>
+                           </div>
+                           <ul class="follow_us">
+                               <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.facebook.com/ចៅ-បាយក្តាំង-214353082064202/"><img
+                                           src="../assets/images/fb.png" alt="Fb"></a></li>                             
+                               <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.youtube.com/channel/UCag1QcFe-E22cxbddOl7iiw/playlists"><img
+                                           src="../assets/images/youtube.png" alt="YouTube"></a></li>
+                           </ul>
+
+                       </div> <!-- // information -->
+                   </div> <!-- // container -->
+               </div> <!-- // footer-top -->
+
+               <div class="footer-bottom">
+                   <div class="container-footer">
+                       <div class="copyright">Copyright © 2019 brocodings.com All Rights Reserved.</div>
+                       <div class="developedby">
+                           Developed by:
+                           <a href="../index.html" target="_blank" style="color:#ffffff;">
+                               brocodings.com
+                           </a>
+                       </div>
+                   </div> <!-- // container -->
+               </div> <!-- // footer-bottom -->
+
+           </div> <!-- // footer -->
+       </div> <!-- // wrapper -->
+       <script type="text/javascript" src="../assets/js/jquery.min.js"></script>       
+       <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+       <script type="text/javascript" src="../../cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+       <script type="text/javascript" src="../../cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+       
+       <script type="text/javascript">
+       $(document).ready(function() {
+           //data table
+           $('#datalesson').DataTable({
+            "pageLength": 50
+           });
+
+
+       });
+
+       </script>
+
+       </body>
+
+       
+<!-- Mirrored from www.brocodings.com/post/mysql?related=%e1%9e%98%e1%9f%81%e1%9e%9a%e1%9f%80%e1%9e%93%e1%9e%91%e1%9e%b8%20%e1%9f%a3%e1%9f%a3%20%e1%9f%96%20UNION by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Aug 2020 08:19:18 GMT -->
+</html>    
